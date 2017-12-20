@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A Beginner Portfolio Site">
+  <meta name="author" content="Aloysius">
+  <title>All About Aloysius</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="flex-container wrap">
+
+      <!--  Side bar uses characteristics of both left-item and top-item -->
+      <section class="flex-item left-item top-item side-bar-order">
+          <div class="flex-container wrap info-side-bar">
+
+            <ul class="bullet-point-indent">
+              <li class="bottom-space">
+                <a href="#" class="flex-item info-tab">Home</a>
+              </li>
+              <li class="bottom-space">
+                <!-- TODO: add a link for information "about" that takes the
+                user to actual background information on another page -->
+                <a href="#" class="flex-item info-tab">About</a>
+              </li>
+              <li>
+                <a href="#" class="flex-item info-tab">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+      </section>
+
+
+      <section class="flex-item right-item top-item">
+        <!-- vertical flex items appear in sets of columns rather than rows -->
+        <div class="vertical-flex-container wrap">
+
+          <img src="img/logo.jpg" alt="A logo design for the word 'Logo'"
+               class="flex-vert-item">
+          <h1 class="flex-vert-item right-vert-item name-text">ALOYSIUS</h1>
+          <h3 class="flex-vert-item right-vert-item hobby-text">
+              FRONT-END WEB DEVELOPMENT NOVICE</h3>
+
+        </div>
+        <hr>
+      </section>
+
+    </div>
+  </header>
+
+
+  <ul class="flex-container wrap">
+
+    <li class="flex-item right-item mid-item">
+
+      <!-- this image is used for larger screens -->
+      <img src="img/front_end_design3.jpg"
+           alt="sample HTML code to make this website"
+           class="mid-right-image large-image">
+
+      <!-- this image is used for smaller screens -->
+      <img src="img/small_code_sample.jpg"
+           alt="close up of HTML code to make this website"
+           class="mid-right-image small-image">
+    </li>
+
+    <li class="flex-item right-item bot-item">
+      <header>
+
+        <section class="vertical-flex-container wrap third-row">
+          <h2 class="bottom-flex-item feature-text">Featured Work</h2>
+          <!-- filler images and fake sites as placeholders -->
+
+          <article class="bottom-flex-item project-info">
+            <img src="img/blue_sky.jpg" alt="A blue sky"
+                 class="image-spot">
+            <h3 class="description">Project 1</h3>
+            <!-- <p class="site-location">http://placeholder1.com</p> -->
+            <a href="https://wbchristerson.github.io/pixel-art/"
+               target="_blank">Pixel Art Maker</a>
+          </article>
+
+          <article class="bottom-flex-item project-info project-info-secondary">
+            <!-- additional styling is necessary for the second image (using
+                 'second-image') since its dimensions are different from those
+                 of the other images -->
+            <img src="img/sunset.jpg"
+                 alt="Light across some buildings during a sunset"
+                 class="image-spot second-image">
+            <h3 class="description width-alteration">Project 2</h3>
+            <!-- <p class="site-location">http://placeholder2.com</p> -->
+            <a href="https://wbchristerson.github.io/memory-game/"
+               target="_blank">Memory Game</a>
+          </article>
+
+          <article class="bottom-flex-item project-info project-info-secondary">
+            <img src="img/daylight.jpg" alt="Daylight"
+                 class="image-spot">
+            <h3 class="description width-alteration">Project 3</h3>
+            <!-- <h4 class="site-location">http://placeholder3.com</h4> -->
+            <!-- <p class="site-location">http://placeholder3.com</p> -->
+            <a href="https://wbchristerson.github.io/arcade-game/"
+               target="_blank">Frogger</a>
+          </article>
+
+        </section>
+      </header>
+    </li>
+  </ul>
+
+
+  <footer class="footer-value">
+    <!-- contact information again, to be given  -->
+    <!-- TODO: add a link for actual contact information, possibly on
+    another page -->
+    <a href="#" class="flex-item">Contact</a>
+  </footer>
+
+</body>
+</html>
