@@ -134,3 +134,17 @@ a:hover {
       margin-right: 0;
   }
 }
+
+.home {
+  background-color: red;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.project-title {
+  font: 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 550;
+  line-height: 56px;
+  letter-spacing: -1px;
+}
