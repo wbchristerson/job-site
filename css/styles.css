@@ -136,7 +136,7 @@ a:hover {
 }
 
 .home {
-  background-color: red;
+  /* background-color: red; */
   width: 90%;
   margin-right: auto;
   margin-left: auto;
@@ -147,4 +147,13 @@ a:hover {
   font-weight: 550;
   line-height: 56px;
   letter-spacing: -1px;
+  margin-left: 10%;
+  color: #282727;
+}
+
+.intro-image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
 }
