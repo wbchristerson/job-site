@@ -143,6 +143,11 @@ a:hover {
     margin-left: 25%;
     margin-right: 20%;
   }
+
+  .project-text {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
 }
 
 .home {
@@ -161,7 +166,6 @@ a:hover {
   color: #282727;
   margin-right: 20%;
   margin-left: 20%;
-  /* background-color: azure; */
 }
 
 .project-title {
@@ -169,6 +173,7 @@ a:hover {
   font: 26px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 550;
   display: block;
+  margin-bottom: 10px;
 }
 
 .intro-image {
@@ -200,4 +205,26 @@ a:hover {
 .inner-link {
   /* color: blue; */
   color: #42cef4;
+  /* color: #398bba; */
+  /* color: #5ed2f2; */
+}
+
+.details {
+  margin-top: 20px;
+  background-color: purple;
+}
+
+.sub-section {
+  font: 23px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 550;
+  background-color: #5ed2f2;
+}
+
+.sub-section path {
+  fill: #383737;
+}
+
+.bullet-info {
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
 }
