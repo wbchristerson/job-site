@@ -131,29 +131,73 @@ a:hover {
   }
 
   .page-link:not(:last-child) {
-      margin-right: 0;
+    margin-right: 0;
+  }
+
+  .home h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .project-title span {
+    margin-left: 25%;
+    margin-right: 20%;
   }
 }
 
 .home {
-  /* background-color: red; */
   width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
 
-.project-title {
-  font: 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 550;
-  line-height: 56px;
+.project {
+  /* background-color: red; */
+  margin-top: 30px;
+}
+
+.project-text {
   letter-spacing: -1px;
-  margin-left: 10%;
   color: #282727;
+  margin-right: 20%;
+  margin-left: 20%;
+  /* background-color: azure; */
+}
+
+.project-title {
+  line-height: 56px;
+  font: 26px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 550;
+  display: block;
 }
 
 .intro-image {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  height: 400px;
+  height: 350px;
+}
+
+@media screen and (max-width: 370px) {
+  .intro-image {
+    height: 300px;
+  }
+  /* .project-title {
+    margin-right: 20%;
+    margin-left: 30%;
+  }
+  .description {
+    margin-right: 5%;
+    margin-left: 5%;
+  } */
+}
+
+.description {
+  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200
+}
+
+.inner-link {
+  /* color: blue; */
+  color: #42cef4;
 }
