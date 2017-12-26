@@ -39,9 +39,10 @@
   </header>
 
   <div class="home">
+
     <div class="project">
       <a class="project-text project-title" href="https://wbchristerson.github.io/arcade-game/" target="_blank"><span>Frogger</span></a>
-      <img class="intro-image" src="img/general-game.png" alt="A sample image of the game screen during use.">
+      <img class="added-image normal-image" src="img/general-game.png" alt="A sample image of the game screen during use.">
       <h3 class="project-text description">This project is a re-creation of the
          arcade game Frogger using JavaScript and a basic HTML/CSS skeleton.
          You can try the game
@@ -54,79 +55,243 @@
             href="https://github.com/wbchristerson/arcade-game"
             target="_blank">
            this Github page
-         </a>.
+         </a> (most of the below additional information is available in the
+         README.md file at that page).
        </h3>
        <div class="details">
-         <h4 class="project-text sub-section">
-           Structure
+         <h3 class="project-text sub-section">
+           <div class="topic-label">
+             Structure
+             <!-- <svg viewBox="0 0 18 15">
+               <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+             </svg> -->
 
-           <!-- <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/> -->
+             <svg class="cross" width="30" height="30">
+               <rect x="0" y="10" width="21" height="5" />
+               <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+             </svg>
+           </div>
 
-           <ul class="bullet-info">
-             <li>The game includes 15 levels in which the user must traverse a crossing which contains enemies.</li>
-             <li>The user traverses the board using the arrow keys.</li>
-             <li>When the user comes in contact with an enemy, he/she loses a life and returns to the start of the level at the default position on screen.</li>
-             <li>The user can also collect gems (of varying point values) and stars (which give extra lives).</li>
-             <li>If the user loses all lives, then the game ends in a loss. If the user completes all 15 levels with at least one life left, then the game ends in a win.</li>
-             <li>When the game ends, the player may then play again or return to the introductory page.</li>
-           </ul>
-         </h4>
+           <div class="extra-content hide-content">
+             <ul>
+               <li>The game includes 15 levels in which the user must traverse a crossing which contains enemies.</li>
+               <li>The user traverses the board using the arrow keys.</li>
+               <li>When the user comes in contact with an enemy, he/she loses a life and returns to the start of the level at the default position on screen.</li>
+               <li>The user can also collect gems (of varying point values) and stars (which give extra lives).</li>
+               <li>If the user loses all lives, then the game ends in a loss. If the user completes all 15 levels with at least one life left, then the game ends in a win.</li>
+               <li>When the game ends, the player may then play again or return to the introductory page.</li>
+             </ul>
+           </div>
+         </h3>
 
-         <h4 class="project-text sub-section">
-           Design
-         </h4>
+         <h3 class="project-text sub-section">
+           <div class="topic-label">
+             Design
+
+             <svg class="cross" width="30" height="30">
+               <rect x="0" y="10" width="21" height="5" />
+               <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+             </svg>
+
+           </div>
+
+           <div class="extra-content hide-content">
+             <p>
+               The game begins with an introductory page explaining how to
+               play. It also lists the possible avatars for the user, along
+               with the keys to be pressed to switch to those avatars. The
+               player begins by pressing the "space" key.
+             </p>
+
+             <img class="added-image normal-image" src="img/intro-page.png"
+                  alt="A screenshot of the game's introductory page">
+
+             <p>
+               The game page includes a background of grass, brick, and water
+               units. The score, health, and level appear at the bottom. Enemy
+               sprites cross the screen from left to right at varying speeds
+               and positions. Gems and stars occasionally appear, bobbing up
+               and down until collected. When a gem is collected, it disappears
+               and its added point value drifts up the screen for several
+               iterations. Blue gems are worth 3 points, green gems are worth 6
+               points, and orange gems are worth 9 points. Upon reaching levels
+               5, 10, and 15, an announcement appears across the screen for
+               several iterations.
+             </p>
+
+             <img class="added-image normal-image" src="img/game-page.png"
+                  alt="A screenshot of the game during play">
+
+             <p>
+               The end page is very similar to the introductory page and
+               congratulates both losses and wins.
+             </p>
+
+             <div class="pair-container">
+               <img class="added-image pair-image" src="img/end-lose-page.png"
+                    alt="A screenshot of the end page upon a loss">
+
+               <img class="added-image pair-image" src="img/end-page.png"
+                    alt="A screenshot of the end page upon a win">
+             </div>
+
+             <p>
+               To give the impression of increasing difficulty, the chance of
+               each of three independent rocks appearing on screen increases up
+               to level 5, after which time they will all always appear (though
+               sometimes overlapping each other). Furthermore, one strategy to
+               avoid losing lives is to wait for the right half of the screen
+               to become clear and cross from that half (since enemies always
+               cross the screen from left to right). So to further increase
+               difficulty beyond level 5, a fourth rock will always appear
+               somewhere in the rightmost column.
+             </p>
+
+           </div>
+
+         </h3>
+
+
+         <h3 class="project-text sub-section">
+           <div class="topic-label">
+             Running The Application
+
+             <svg class="cross" width="30" height="30">
+               <rect x="0" y="10" width="21" height="5" />
+               <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+             </svg>
+
+           </div>
+
+           <div class="extra-content hide-content">
+             <p>
+               The application can be run by clicking
+               <a class="inner-link"
+                  href="https://wbchristerson.github.io/arcade-game/"
+                  target="_blank">here</a>. To download, you
+               can clone the repository using this terminal command:
+             </p>
+
+             <pre>
+               <code>
+                 git clone https://github.com/wbchristerson/arcade-game.git
+               </code>
+             </pre>
+
+             <p>
+               Alternatively, follow the instructions below to download to a hard drive:
+             </p>
+
+             <ul>
+               <li>Navigate to
+                 <a class="inner-link"
+                    href="https://github.com/wbchristerson/arcade-game"
+                    target="_blank">
+                    this</a>
+                  page.
+               </li>
+               <li>Click the green "Clone or download" button towards the right then choose "Download ZIP".</li>
+               <li>Find the folder arcade-game-master in your Downloads folder or wherever it was placed on your device.</li>
+               <li>Right click and choose "Extract All".</li>
+               <li>Open your browser and use Ctrl + O (for Windows machines) to open the file selector on your device.</li>
+               <li>Go to arcade-game-master, enter arcade-game-master again, then select index.html. The game screen will appear.</li>
+             </ul>
+
+           </div>
+         </h3>
+
        </div>
     </div>
+
+
+
+
+
+
+
+
+
+    <div class="project">
+      <a class="project-text project-title" href="https://wbchristerson.github.io/memory-game/" target="_blank"><span>Memory Game</span></a>
+      <img class="added-image normal-image" src="img/sample-game-state.png" alt="A sample image of the matching game during use.">
+      <h3 class="project-text description">
+        Project Explanation
+      </h3>
+      <div class="details">
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+            Structure
+             <!-- <svg viewBox="0 0 18 15">
+               <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+             </svg> -->
+
+             <svg class="cross" width="30" height="30">
+               <rect x="0" y="10" width="21" height="5" />
+               <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+             </svg>
+           </div>
+
+           <div class="extra-content hide-content">
+             Blah Blah Blah
+           </div>
+         </h3>
+
+         <h3 class="project-text sub-section">
+           <div class="topic-label">
+             Design
+
+             <svg class="cross" width="30" height="30">
+               <rect x="0" y="10" width="21" height="5" />
+               <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+             </svg>
+
+           </div>
+
+           <div class="extra-content hide-content">
+             Blah Blah Blah
+           </div>
+
+         </h3>
+
+
+         <h3 class="project-text sub-section">
+           <div class="topic-label">
+             Running The Application
+
+             <svg class="cross" width="30" height="30">
+               <rect x="0" y="10" width="21" height="5" />
+               <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+             </svg>
+
+           </div>
+
+           <div class="extra-content hide-content">
+             Blah Blah Blah
+
+           </div>
+         </h3>
+
+       </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
-
-
-
-  <ul class="flex-container wrap">
-
-
-    <li class="flex-item right-item bot-item">
-      <header>
-
-        <section class="vertical-flex-container wrap third-row">
-          <h2 class="bottom-flex-item feature-text">Featured Work</h2>
-          <!-- filler images and fake sites as placeholders -->
-
-          <article class="bottom-flex-item project-info">
-            <!-- <img src="img/blue_sky.jpg" alt="A blue sky"
-                 class="image-spot"> -->
-            <h3 class="description">Project 1</h3>
-            <!-- <p class="site-location">http://placeholder1.com</p> -->
-            <a href="https://wbchristerson.github.io/pixel-art/"
-               target="_blank">Pixel Art Maker</a>
-          </article>
-
-          <article class="bottom-flex-item project-info project-info-secondary">
-            <!-- additional styling is necessary for the second image (using
-                 'second-image') since its dimensions are different from those
-                 of the other images -->
-            <!-- <img src="img/sunset.jpg"
-                 alt="Light across some buildings during a sunset"
-                 class="image-spot second-image"> -->
-            <h3 class="description width-alteration">Project 2</h3>
-            <!-- <p class="site-location">http://placeholder2.com</p> -->
-            <a href="https://wbchristerson.github.io/memory-game/"
-               target="_blank">Memory Game</a>
-          </article>
-
-          <article class="bottom-flex-item project-info project-info-secondary">
-            <!-- <img src="img/daylight.jpg" alt="Daylight"
-                 class="image-spot"> -->
-            <h3 class="description width-alteration">Project 3</h3>
-            <!-- <h4 class="site-location">http://placeholder3.com</h4> -->
-            <!-- <p class="site-location">http://placeholder3.com</p> -->
-            <a href="https://wbchristerson.github.io/arcade-game/"
-               target="_blank">Frogger</a>
-          </article>
-
-        </section>
-      </header>
-    </li>
-  </ul>
 
 
   <footer class="footer-value">
@@ -136,6 +301,10 @@
     <a href="#" class="flex-item">Contact</a>
   </footer>
 
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
 

@@ -2,6 +2,7 @@ body {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
+  /* background-image: url("../img/morning.png"); */
 }
 
 .site-header {
@@ -144,10 +145,17 @@ a:hover {
     margin-right: 20%;
   }
 
-  .project-text {
-    margin-right: 0%;
-    margin-left: 0%;
+  .details h3 {
+    margin-left: 0;
+    margin-right: 0;
+    /* margin-bottom: 0; */
   }
+
+  /* .sub-section {
+    width: 100%;
+    margin-right: 10%;
+    margin-left: -10%;
+  } */
 }
 
 .home {
@@ -159,6 +167,7 @@ a:hover {
 .project {
   /* background-color: red; */
   margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .project-text {
@@ -166,6 +175,8 @@ a:hover {
   color: #282727;
   margin-right: 20%;
   margin-left: 20%;
+  /* margin-bottom: 0;
+  padding-bottom: 0; */
 }
 
 .project-title {
@@ -174,17 +185,30 @@ a:hover {
   font-weight: 550;
   display: block;
   margin-bottom: 10px;
+  /* border-bottom: 1px solid black; */
 }
 
-.intro-image {
-  display: block;
+.added-image {
   margin-right: auto;
   margin-left: auto;
+}
+
+.normal-image {
+  display: block;
   height: 350px;
 }
 
+.pair-container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.pair-image {
+  height: 300px;
+}
+
 @media screen and (max-width: 370px) {
-  .intro-image {
+  .added-image {
     height: 300px;
   }
   /* .project-title {
@@ -211,20 +235,47 @@ a:hover {
 
 .details {
   margin-top: 20px;
-  background-color: purple;
+  /* background-color: purple; */
 }
 
 .sub-section {
   font: 23px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 550;
-  background-color: #5ed2f2;
+  /* background-color: #5ed2f2; */
 }
 
 .sub-section path {
   fill: #383737;
 }
 
-.bullet-info {
+.extra-content {
   font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
+}
+
+.hide-content {
+  display: none;
+}
+
+.cross {
+  float: left;
+}
+
+rect {
+  fill: rgb(0,0,255);
+}
+
+.topic-label {
+  cursor: pointer;
+}
+
+.topic-label:hover {
+  text-decoration: underline;
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 5px;
 }
