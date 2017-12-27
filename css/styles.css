@@ -265,6 +265,12 @@ a:hover {
   margin-left: 20%;
 }
 
+
+.pale-edge {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
 .cross {
   float: left;
 }
