@@ -352,6 +352,9 @@ pre code {
   /* margin-left: -15px; */
   margin-left: -38px;
   /* @extend %clearfix; */
+
+
+  /* height: 200px; */
 }
 
 .footer-col {
@@ -383,4 +386,16 @@ pre code {
   /* width:         calc(45% - 15px); */
   /* width: 35%; */
   width: 33%;
+}
+
+.site-end {
+  font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  /* font-size: 26px; */
+  /* font-weight: 300; */
+  line-height: 40px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  color: #282727;
 }
