@@ -29,14 +29,16 @@ body {
   padding-right: 30px;
   padding-left: 30px;
   /* @extend %clearfix; */
+
+  background-color: purple;
 }
 
 
 @media screen and (min-width: 800px) {
   .wrapper {
     max-width: 770px;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
   }
 
   .footer-col-1 {
@@ -45,6 +47,7 @@ body {
     /* width: 50% - 15px; */
     /* width: 33%; */
     width: 25%;
+    float: left;
   }
 
   .footer-col-2 {
@@ -176,7 +179,9 @@ a:hover {
   }
 
   .footer-col {
-    float: none;
+    /* float: none; */
+    float: left:
+
     /* width: -webkit-calc(100% - 15px); */
     /* width:         calc(100% - 15px); */
     /* width: 100% - 15px; */
@@ -367,12 +372,18 @@ pre code {
 
 .site-footer {
   border-top: 1px solid #e8e5e5;
-  padding: 30px 0;
+  /* padding: 30px 0; */
 }
+
+/* .end-list {
+  display: block;
+} */
 
 .footer-heading {
   font-size: 18px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  /* margin-right: auto; */
+  /* margin-left: auto; */
 }
 
 .footer-col-wrapper {
@@ -385,6 +396,7 @@ pre code {
   background-color: green;
 
 
+  /* float: left; */
   /* height: 200px; */
 }
 
@@ -416,15 +428,13 @@ pre code {
   /* width: 33%; */
 }
 
-.contact-list {
-  list-style: none;
-  margin-left: 0;
-}
 
 .social-media-list {
   list-style: none;
   margin-left: 0;
 }
+
+
 
 .site-end {
   font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -434,7 +444,69 @@ pre code {
   line-height: 40px;
   /* line-height: 20px; */
   letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
+  /* margin-bottom: 0; */
+  /* float: left; */
   color: #282727;
+}
+
+/* .wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* .end-len {
+  height: 200px;
+  display: block;
+} */
+
+
+.content-wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+
+  /* justify-content: space-around; */
+  justify-content: flex-start;
+  /* justify-content: space-between; */
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  /* padding: 5px 5px 5px 0; */
+  /* width: 200px;
+  height: 150px; */
+  /* margin-top: 10px; */
+  margin-right: 4%;
+
+  /* text-align: center; */
+
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  /* font-size: 26px; */
+  /* font-weight: 300; */
+  line-height: 30px;
+  /* line-height: 20px; */
+  letter-spacing: -1px;
+  /* margin-bottom: 0; */
+  /* float: left; */
+  color: #282727;
+}
+
+.contact-list {
+  list-style: none;
+  /* margin-left: 0; */
+  margin-left: -45px;
+}
+
+.other-item {
+  min-width: 20%;
+}
+
+.last-item {
+  margin-right: 0;
+  padding-right: 0;
 }
