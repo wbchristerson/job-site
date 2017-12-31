@@ -30,7 +30,4 @@ $( '.page-link' ).click(function(event) {
   else if (content === 'Contact') {
     $( '.contact' ).removeClass( 'hide-content' );
   }
-
-  // console.log($( this ).text());
-
 });

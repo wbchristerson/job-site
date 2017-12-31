@@ -202,9 +202,11 @@ a:hover {
 }
 
 .about {
+  /* background-image: url("../img/morning.png"); */
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  min-height: 400px;
 }
 
 .project {
@@ -527,4 +529,9 @@ pre code {
 
 .sub-title {
   color: #828282;
+}
+
+.statement {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
