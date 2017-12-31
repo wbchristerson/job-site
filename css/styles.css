@@ -484,7 +484,8 @@ pre code {
 
   /* text-align: center; */
 
-  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font: 16px Arial, Helvetica, sans-serif;
   font-weight: 200;
   /* font-size: 26px; */
   /* font-weight: 300; */
@@ -504,7 +505,8 @@ pre code {
 }
 
 .first-item {
-  min-width: 25%;
+  /* min-width: 25%; */
+  min-width: 30%;
 }
 
 .second-item {
@@ -515,4 +517,8 @@ pre code {
 .third-item {
   margin-right: 0;
   padding-right: 0;
+}
+
+.sub-title {
+  color: #828282;
 }
