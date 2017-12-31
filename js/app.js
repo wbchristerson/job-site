@@ -11,3 +11,26 @@ $( '.topic-label' ).click(function() {
     vertBar.attr('class', 'vert-plus hide-content');
   }
 });
+
+
+$( '.page-link' ).click(function(event) {
+  event.preventDefault();
+  let content = $( this ).text();
+
+  $( '.home' ).addClass( 'hide-content' );
+  $( '.about' ).addClass( 'hide-content' );
+  $( '.contact' ).addClass( 'hide-content' );
+
+  if (content === 'Home') {
+    $( '.home' ).removeClass( 'hide-content' );
+  }
+  else if (content === 'About') {
+    $( '.about' ).removeClass( 'hide-content' );
+  }
+  else if (content === 'Contact') {
+    $( '.contact' ).removeClass( 'hide-content' );
+  }
+
+  // console.log($( this ).text());
+
+});
