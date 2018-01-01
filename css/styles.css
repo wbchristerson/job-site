@@ -289,7 +289,7 @@ a:hover {
   height: 300px;
 } */
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 376px) {
   .added-image {
     height: 300px;
   }
