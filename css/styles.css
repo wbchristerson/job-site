@@ -149,7 +149,9 @@ a:hover {
   .site-nav:hover .trigger {
     display: block;
     padding-bottom: 5px;
-    background-color: blue;
+    /* background-color: blue; */
+    /* background-color: yellow; */
+    background-color: #d0fdfd
   }
 
   .page-link {
@@ -167,9 +169,16 @@ a:hover {
     margin-right: 5%;
   }
 
-  .project-title span {
+  .frogger-title {
     margin-left: 25%;
     margin-right: 20%;
+  }
+
+  .other-title span {
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-left: 5%;
+    margin-right: 2%;
   }
 
   .details h3 {
@@ -180,13 +189,21 @@ a:hover {
 
   .footer-col {
     /* float: none; */
-    float: left:
+    float: left;
 
     /* width: -webkit-calc(100% - 15px); */
     /* width:         calc(100% - 15px); */
     /* width: 100% - 15px; */
     width: 100%;
   }
+
+  .extra-content ul {
+    margin-right: 7%;
+    /* margin-left: -30px;
+    line-height: 20px; */
+  }
+
+
 
   /* .sub-section {
     width: 100%;
@@ -248,6 +265,11 @@ a:hover {
 .normal-image {
   display: block;
   height: 350px;
+}
+
+.special-margin {
+  width: 100%;
+  /* margin-left: -12%; */
 }
 
 .pair-container {
