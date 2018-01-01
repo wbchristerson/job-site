@@ -295,13 +295,11 @@ a:hover {
 
 .details {
   margin-top: 20px;
-  /* background-color: purple; */
 }
 
 .sub-section {
   font: 23px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 550;
-  /* background-color: #5ed2f2; */
 }
 
 .sub-section path {
@@ -341,6 +339,8 @@ rect {
 
 /* .topic-label {
   cursor: pointer;
+  border: 1px solid black;
+  border-radius: 25px;
 } */
 
 /* .topic-label:hover {
@@ -350,6 +350,8 @@ rect {
 .name-structure {
   max-width: 150px;
   cursor: pointer;
+  border: 1px solid black;
+  border-radius: 25px;
 }
 
 .name-structure:hover {
@@ -541,4 +543,10 @@ pre code {
 .statement {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.contact-info {
+  padding-top: 5%;
+  font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200
 }
