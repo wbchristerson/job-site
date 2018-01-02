@@ -65,12 +65,25 @@ body {
     width: 25%;
   }
 
-  /* .special-margin {
-    margin-left: 50%;
+  .special-margin {
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 50%;
     margin-right: 20%;
-    height: 100px;
-  } */
+    height: 100px; */
+  }
+
 }
+
+
+@media screen and (max-width: 799px) {
+  .special-margin {
+    /* margin-left: -12%; */
+    width: 100%;
+    /* margin-left: -80px; */
+  }
+}
+
 
 a {
   text-decoration: none;
@@ -209,7 +222,6 @@ a:hover {
     line-height: 20px; */
   }
 
-
   .pair-image {
     width: 100%;
     padding-bottom: 10px;
@@ -282,10 +294,6 @@ a:hover {
   height: 350px;
 }
 
-.special-margin {
-  width: 100%;
-  /* margin-left: -12%; */
-}
 
 .pair-container {
   margin-left: 5%;
