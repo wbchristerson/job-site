@@ -73,6 +73,11 @@ body {
     height: 100px; */
   }
 
+  .display-code {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 
@@ -434,12 +439,20 @@ rect {
   cursor: pointer;
 }
 
-pre code {
+/* pre code {
   background-color: #eee;
   border: 1px solid #999;
   display: block;
   padding: 5px;
+} */
+
+.display-code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 10px 5px;
 }
+
 
 .site-footer {
   border-top: 1px solid #e8e5e5;
