@@ -235,13 +235,37 @@ a:hover {
     margin-right: 20%;
   } */
 
+  .content-wrapper {
+    flex-direction: column;
+  }
 
-
+  .second-item {
+    /* background-color: red; */
+    /* width: 90%; */
+    min-width: 40%;
+    /* margin-left: -2%; */
+  }
   /* .sub-section {
     width: 100%;
     margin-right: 10%;
     margin-left: -10%;
   } */
+
+  .flex-item {
+    /* background: tomato; */
+    padding: 0px;
+    line-height: 10px;
+    margin-top: -40px;
+  }
+
+  .footer-heading {
+    margin-bottom: 30px;
+  }
+
+  .third-item {
+    margin-top: -20px;
+  }
+
 }
 
 .home {
