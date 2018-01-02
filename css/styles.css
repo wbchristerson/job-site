@@ -175,7 +175,7 @@ a:hover {
     padding-bottom: 5px;
     /* background-color: blue; */
     /* background-color: yellow; */
-    background-color: #d0fdfd
+    background-color: #d0fdfd;
   }
 
   .page-link {
@@ -266,6 +266,23 @@ a:hover {
     margin-top: -20px;
   }
 
+  .about {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .about-text {
+    background-color: red;
+    /* margin-left: -20%; */
+    /* margin-right: 0%; */
+  }
+
+  .statement {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
 }
 
 .home {
@@ -353,6 +370,10 @@ a:hover {
 @media screen and (max-width: 376px) {
   .added-image {
     height: 300px;
+  }
+
+  .second-item {
+    margin-left: -2%;
   }
   /* .project-title {
     margin-right: 20%;
@@ -641,4 +662,13 @@ rect {
   font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
   line-height: 40px;
+}
+
+.about-text {
+  letter-spacing: -1px;
+  color: #282727;
+  margin-right: 20%;
+  margin-left: 20%;
+  /* margin-bottom: 0;
+  padding-bottom: 0; */
 }
