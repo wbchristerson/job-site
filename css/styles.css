@@ -289,11 +289,19 @@ a:hover {
   margin-left: auto;
 }
 
+.pixel-image {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.color-image {
+  max-width: 100%;
+}
+
 .normal-image {
   display: block;
   height: 350px;
 }
-
 
 .pair-container {
   margin-left: 5%;
@@ -305,6 +313,7 @@ a:hover {
 }
 
 .short-image {
+  display: block;
   height: 180px;
 }
 
