@@ -343,13 +343,10 @@ rect {
   /* width: 33%; */
 }
 
-
 .social-media-list {
   list-style: none;
   margin-left: -30%;
 }
-
-
 
 .site-end {
   font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -568,8 +565,10 @@ rect {
 
   .flex-item {
     /* background: tomato; */
-    padding: 0px;
-    line-height: 10px;
+    /* padding: 0px; */
+    padding: 5px;
+    /* line-height: 10px; */
+    line-height: 20px;
     margin-top: -40px;
   }
 
@@ -579,18 +578,20 @@ rect {
 
   .third-item {
     margin-top: -20px;
+    margin-left: -2%;
   }
 
   .about {
     /* width: 100%; */
     margin-right: 0;
-    margin-left: -30%;
+    margin-left: 0;
   }
 
   .about-text {
-    background-color: red;
-    /* margin-left: -20%; */
-    margin-left: -100px;
+    /* background-color: red; */
+    margin-left: 10%;
+    margin-right: auto;
+    /* margin-left: -100px; */
     /* margin-right: 0%; */
   }
 }
