@@ -580,6 +580,11 @@ rect {
     /* line-height: 10px; */
     line-height: 20px;
     margin-top: -40px;
+    font-weight: 500;
+  }
+
+  .contact-list {
+    font-weight: 500;
   }
 
   .footer-heading {
