@@ -16,15 +16,15 @@ function setPage(elem) {
   let content = elem.text();
   $( 'body' ).css('background', '#ffffff')
 
-  $( '.home' ).addClass( 'hide-content' );
+  $( '.projects-page' ).addClass( 'hide-content' );
   $( '.about' ).addClass( 'hide-content' );
   $( '.contact' ).addClass( 'hide-content' );
 
-  if ((content === 'Home') || (content === 'Will Christerson')) {
-    $( '.home' ).removeClass( 'hide-content' );
-  }
-  else if (content === 'About') {
+  if (content === 'Home') {
     $( '.about' ).removeClass( 'hide-content' );
+  }
+  else if ((content === 'Projects') || (content === 'Will Christerson')) {
+    $( '.projects-page' ).removeClass( 'hide-content' );
   }
   else if (content === 'Contact') {
     $( '.contact' ).removeClass( 'hide-content' );

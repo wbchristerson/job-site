@@ -97,7 +97,7 @@ a:hover {
 }
 
 
-.home {
+.projects-page {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
@@ -506,7 +506,7 @@ em {
     margin-right: 0;
   }
 
-  .home h3 {
+  .projects-page h3 {
     margin-left: 5%;
     margin-right: 5%;
   }
