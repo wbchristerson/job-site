@@ -176,6 +176,12 @@ a:hover {
   font-weight: 200
 }
 
+.about-greeting {
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  color: #26e23c;
+}
+
 .inner-link {
   /* color: blue; */
   color: #42cef4;
