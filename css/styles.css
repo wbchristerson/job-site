@@ -232,16 +232,6 @@ rect {
   fill: rgb(0,0,255);
 }
 
-/* .topic-label {
-  cursor: pointer;
-  border: 1px solid black;
-  border-radius: 25px;
-} */
-
-/* .topic-label:hover {
-  text-decoration: underline;
-} */
-
 .name-structure {
   max-width: 150px;
   cursor: pointer;
@@ -450,6 +440,11 @@ rect {
   font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
   line-height: 40px;
+}
+
+em {
+  text-decoration: underline;
+  font-style: normal;
 }
 
 
