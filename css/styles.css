@@ -51,6 +51,7 @@ a:hover {
   margin-bottom: 0;
   float: left;
   color: #282727;
+  color: purple;
 }
 
 .site-title:visited {
@@ -620,6 +621,10 @@ em {
 
   .page-link:hover {
     text-decoration: none;
+  }
+
+  .contact {
+    min-height: 290px;
   }
 }
 
