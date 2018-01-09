@@ -479,14 +479,6 @@ em {
     line-height: 0;
     padding-top: 10px;
     text-align: center;
-
-    > svg {
-      width: 18px;
-      height: 15px;
-      path {
-        fill: #383737;
-      }
-    }
   }
 
   .trigger {
@@ -620,6 +612,10 @@ em {
     margin-right: auto;
     /* margin-left: -100px; */
     /* margin-right: 0%; */
+  }
+
+  .page-link:hover {
+    text-decoration: none;
   }
 }
 
