@@ -53,7 +53,7 @@ a:hover {
   margin-bottom: 0;
   float: left;
   color: #282727;
-  /* color: purple; */
+  color: red;
 }
 
 /* .site-title:visited {
@@ -166,6 +166,8 @@ a:hover {
 .pair-container {
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 5px;
+  background-color: blue;
 }
 
 .pair-image {
@@ -183,7 +185,7 @@ a:hover {
 }
 
 .about-greeting {
-  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 36px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
   color: #26e23c;
 }
@@ -460,16 +462,33 @@ em {
 }
 
 .clone-command {
-  margin-right: 10%;
-  margin-left: 0;
+  width: 100%;
+  /* margin-right: 10%;
+  margin-left: 0; */
 }
 
-.left-pair {
-  margin-right: 10px;
+.frogger-left-pair {
+  /* float: left; */
+  /* width: 40%; */
+  margin-left: 2%;
+  margin-right: 3%;
 }
 
-.right-pair {
-  margin-left: 10px;
+.frogger-right-pair {
+  /* float: right; */
+  /* width: 40%; */
+  margin-left: 3%;
+  margin-right: 2%;
+}
+
+.pixel-left-pair {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.pixel-right-pair {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .pixel-small-scale {
@@ -711,8 +730,9 @@ em {
   }
 
   .display-code {
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
   }
 }
 
@@ -734,13 +754,13 @@ em {
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
   .pixel-pair {
     display: none;
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1200px) {
   .pixel-small-scale {
     display: none;
   }
@@ -752,7 +772,7 @@ em {
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1300px) {
   .frogger-small-scale {
     display: none;
   }
