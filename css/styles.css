@@ -700,6 +700,10 @@ em {
   .project-title {
     text-align: center;
   }
+
+  .display-code {
+    overflow-wrap: break-word;
+  }
 }
 
 @media screen and (min-width: 800px) {
