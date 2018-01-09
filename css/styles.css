@@ -459,6 +459,10 @@ em {
   font-style: normal;
 }
 
+.clone-command {
+  margin-right: 0;
+  margin-left: 0;
+}
 
 @media screen and (max-width: 600px) {
   .site-nav {
