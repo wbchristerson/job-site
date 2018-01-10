@@ -23,7 +23,7 @@ body {
 }
 
 .wrapper {
-  max-width: 770px;
+  /* max-width: 770px; */
   margin-left: 20%;
   margin-right: 20%;
   /* margin-right: auto; */
@@ -111,9 +111,10 @@ a:hover {
 }
 
 .contact {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  /* width: 90%; */
+  width: 100%;
+  /* margin-right: auto; */
+  /* margin-left: auto; */
   min-height: 400px;
 }
 
@@ -708,11 +709,9 @@ em {
 }
 
 @media screen and (min-width: 800px) {
-  .wrapper {
+  /* .wrapper {
     max-width: 770px;
-    /* padding-right: 15px; */
-    /* padding-left: 15px; */
-  }
+  } */
 
   .footer-col-1 {
     /* width: -webkit-calc(50% - 15px); */
