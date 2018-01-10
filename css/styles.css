@@ -657,8 +657,9 @@ em {
 
   .second-item {
     /* background-color: red; */
-    /* width: 90%; */
-    min-width: 40%;
+    width: 90%;
+    /* min-width: 40%; */
+    /* min-width: 30%; */
     /* margin-left: -2%; */
   }
   /* .sub-section {
@@ -744,6 +745,10 @@ em {
   .wide-email {
     display: none;
   }
+
+  .social-media-list {
+    margin-left: -45px;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -803,9 +808,9 @@ em {
     height: 300px;
   }
 
-  .second-item {
+  /* .second-item {
     margin-left: -2%;
-  }
+  } */
 }
 
 @media screen and (max-width: 1276px) {
