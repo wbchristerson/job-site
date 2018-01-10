@@ -535,6 +535,20 @@ em {
   max-width: 100%;
 }
 
+.wide-email {
+  text-decoration: none;
+}
+
+.narrow-email {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 601px) {
+  .narrow-email {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .site-nav {
     position: absolute;
@@ -725,6 +739,10 @@ em {
 
   .display-code {
     overflow-wrap: break-word;
+  }
+
+  .wide-email {
+    display: none;
   }
 }
 
