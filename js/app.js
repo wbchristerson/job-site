@@ -23,7 +23,7 @@ function setPage(elem) {
 
   // remove the border around whichever of "home", "projects", "content" is covered
   $( '.page-link' ).removeClass( 'select-border' );
-  $( '.social-media-list li img' ).first().attr('src', 'img/github-icon-small.png');
+  $( '.social-media-list li' ).first().children( 'img' ).attr('src', 'img/github-icon-small.png');
 
   if (content === 'Home') {
     $( '.about' ).removeClass( 'hide-content' );
@@ -35,7 +35,7 @@ function setPage(elem) {
   else if (content === 'Contact') {
     $( '.contact' ).removeClass( 'hide-content' );
     $( 'body' ).css('background', 'linear-gradient(160deg, #66afdd 0%, #dddb66 100%)');
-    $( '.social-media-list li img' ).attr('src', 'img/github-icon-small-yellow.png');
+    $( '.social-media-list li' ).first().children( 'img' ).attr('src', 'img/github-icon-small-yellow.png');
     currTab = currTab.next().next();
   }
   currTab.addClass( 'select-border' );
