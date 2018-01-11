@@ -67,7 +67,7 @@ a:hover {
   margin-bottom: 0;
   float: left;
   color: #282727;
-  /* color: red; */
+  color: red;
 }
 
 /* .site-title:visited {
@@ -553,7 +553,8 @@ em {
   }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) { */
+@media screen and (max-width: 740px) {
   .site-nav {
     position: absolute;
     top: 9px;
@@ -707,9 +708,9 @@ em {
     text-decoration: none;
   }
 
-  .contact {
-    /* min-height: 290px; */
-  }
+  /* .contact {
+    min-height: 290px;
+  } */
 
   .wrapper {
     max-width: 740px;
