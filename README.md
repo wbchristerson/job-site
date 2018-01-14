@@ -1,6 +1,6 @@
 # Career Website
 
-This project is a personal website created using HTML, CSS, and JavaScript. It
+This project is a portfolio website created using HTML, CSS, and JavaScript. It
 can be run by clicking [here](https://wbchristerson.github.io/job-site/). From
 the footer of the project:
 
