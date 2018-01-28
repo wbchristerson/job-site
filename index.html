@@ -63,7 +63,6 @@
       <div class="details">
         <h3 class="project-text sub-section">
           <div class="topic-label">
-          <!-- <button class="topic-label"> -->
 
             <svg class="cross" width="30" height="30">
               <rect x="0" y="10" width="21" height="5" />
@@ -73,9 +72,6 @@
             <div class="name-structure">
               Structure
             </div>
-
-          <!-- </button> -->
-
           </div>
 
 
@@ -85,6 +81,26 @@
                   the user to a search page ("Look Up An Entry"), a browse page
                   ("Browse Entries"), an entry addition page ("Add An Entry"),
                   and an entry editing page ("Edit An Entry").
+              </li>
+              <li>The search page can be used to look up entries based on
+                  various pieces of information (listed below) for the entry
+                  addition page as well as by an assigned ID. An expanded view
+                  for matching data entries is also available.
+              </li>
+              <li>The browse page lists all data entries in both a short form
+                  and an expanded view, similar to the search page.
+              </li>
+              <li>The entry addition page can be used to input information about
+                  the data entry. Since the main purpose of the database is to
+                  store mathematical puzzles and problems, accepted data
+                  includes the topic, key words (tags), the source, the date of
+                  completion, the level of difficulty, the problem/puzzle
+                  statement (both with and without LaTeX formatting), the
+                  solution (also both with and without LaTeX formatting), and
+                  additional notes.
+              </li>
+              <li>The entry editing page can be used to alter information for
+                existing data entries. IDs cannot be changed.
               </li>
             </ul>
           </div>
@@ -106,46 +122,147 @@
 
           <div class="extra-content hide-content">
             <p>
-              To be filled in.
-            </p>
-
-            <img class="added-image normal-image" src="img/intro-page.png"
-                 alt="A screenshot of the game's introductory page">
-
-            <p>
-              To be filled in.
-            </p>
-
-            <img class="added-image normal-image" src="img/game-page.png"
-                 alt="A screenshot of the game during play">
-
-            <p>
-              To be filled in.
+              The application begins with the menu shown above. All other page
+              frames have return buttons back to this page. Clicking the "Look
+              Up An Entry" button brings you to the following frame on the left
+              below. As mentioned above, there are options to make queries based
+               on ID in the database, tags (keywords), topic, source, date,
+              difficulty, and mentioned words. When the corresponding check box
+              is clicked, an entry widget appears to input data. Aside from the
+              date and difficulty fields, a checked item without corresponding
+              data will be interpreted as if the no filtering by that item were
+              considered. If no items match the search conditions, then a
+              message to this effect appears in the following text box.
+              Otherwise, a series of search results appears, prefaced by a
+              statement with the number of search results, as seen on right
+              below. An "expanded view" check button can be used to toggle
+              between abridged and complete forms of data entries. Warnings will
+               be given for invalid or out of range IDs or dates. Note that the
+              "mentioned words" and "source" fields will select entries which
+              match any single searched word (even among many).
             </p>
 
             <div class="pair-container frogger-pair">
-              <img class="added-image pair-image frogger-left-pair"
-                   src="img/end-lose-page.png"
-                   alt="A screenshot of the end page upon a loss">
+              <img class="added-image pair-image database-left pale-edge
+                          database-search"
+                   src="img/database-search-blank.png"
+                   alt="The Blank Database Search Page">
 
-              <img class="added-image pair-image frogger-right-pair"
-                   src="img/end-page.png"
-                   alt="A screenshot of the end page upon a win">
+              <img class="added-image pair-image database-right pale-edge
+                          database-search"
+                   src="img/database-search-data.png"
+                   alt="The Database Search Page After A Query">
 
               <span class="stretch"></span>
             </div>
 
-            <img class="added-image normal-image frogger-small-scale"
-                 src="img/end-lose-page.png"
-                 alt="A screenshot of the end page upon a loss">
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-search-blank.png"
+                 alt="The Blank Database Search Page">
 
-            <img class="added-image normal-image frogger-small-scale"
-                 src="img/end-page.png"
-                 alt="A screenshot of the end page upon a win">
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-search-data.png"
+                 alt="The Database Search Page After A Query">
 
             <p>
-              To be filled in.
+              Clicking the "Browse Entries" button brings you to the following
+              frame on the left below. Clicking the browse button will provide a
+              list of all entries in the database as seen on the right below.
+              Similar to the search page, clicking the "expanded view" button
+              will provide more information about items (though not all
+              available information).
             </p>
+
+            <div class="pair-container frogger-pair">
+              <img class="added-image pair-image database-left pale-edge
+                          database-browse"
+                   src="img/database-browse-blank.png"
+                   alt="The Blank Database Browse Page">
+
+              <img class="added-image pair-image database-right pale-edge
+                          database-browse"
+                   src="img/database-browse-data.png"
+                   alt="The Database Browse Page After Browsing">
+
+              <span class="stretch"></span>
+            </div>
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-browse-blank.png"
+                 alt="The Blank Database Browse Page">
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-browse-data.png"
+                 alt="The Database Browse Page After Browsing">
+
+            <p>
+              Clicking the "Add An Entry" button brings you to the following
+              frame on the left below. New entry data is filled in as matches
+              the information on the search page as shown on the right below
+              (aside from the ID, which the user has no control over). The entry
+               can be cancelled or saved, after which time the user returns to
+              the menu. Warnings are provided for invalid date entries. The
+              collection of all data entries is kept in a JSON file as a Python
+              list of "DataEntry" objects (which is stored in the form of a
+              list of dictionaries for serialization).
+            </p>
+
+            <div class="pair-container frogger-pair">
+              <img class="added-image pair-image database-left pale-edge
+                          database-write"
+                   src="img/database-write-blank.png"
+                   alt="The Blank Database Write Page">
+
+              <img class="added-image pair-image database-right pale-edge
+                          database-write"
+                   src="img/database-write-data.png"
+                   alt="The Database Write Page After Inputting An Entry">
+
+              <span class="stretch"></span>
+            </div>
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-write-blank.png"
+                 alt="The Blank Database Write Page">
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-write-data.png"
+                 alt="The Database Write Page After Inputting An Entry">
+
+            <p>
+              Clicking the "Edit An Entry" page brings you to the following
+              frame on the left below. Input an ID and click the edit button to
+              update an entry. The fields will be populated with the
+              corresponding data for the entry with the provided ID as shown
+              below in the right. If the ID is invalid or out of range then a
+              warning appears. Similarly, warnings appear for updating a date to
+              an invalid choice. When finished updating, click the save button.
+              If you do not wish to keep the changes, cancel. In both cases you
+              will return to the menu page.
+            </p>
+
+            <div class="pair-container frogger-pair">
+              <img class="added-image pair-image database-left pale-edge
+                          database-edit"
+                   src="img/database-edit-blank.png"
+                   alt="The Blank Database Edit Page">
+
+              <img class="added-image pair-image database-right pale-edge
+                          database-edit"
+                   src="img/database-edit-data.png"
+                   alt="The Database Edit Page After Choosing An Entry To Edit">
+
+              <span class="stretch"></span>
+            </div>
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-edit-blank.png"
+                 alt="The Blank Database Edit Page">
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-edit-data.png"
+                 alt="The Database Edit Page After Choosing An Entry To Edit">
+
 
           </div>
 
@@ -168,22 +285,52 @@
 
           <div class="extra-content hide-content">
             <p>
-              Run the application in your browser by clicking
+              You will need to have Python installed on your computer. If you do
+              not have it installed, you can download it for free. For details
+              see
               <a class="inner-link"
-                 href="https://wbchristerson.github.io/arcade-game/"
-                 target="_blank">here</a>. To download, clone the repository
-                 using this terminal command:
+                 href="https://www.python.org/downloads/"
+                 target="_blank">this</a> page. For reference, this project was
+              created using Python version 3.1.
             </p>
 
-            <!-- <pre>
-              <code>
-                git clone https://github.com/wbchristerson/arcade-game.git
-              </code>
-            </pre> -->
+            <p>
+              If you are running an operating system other than Windows, then
+              you may have to download and install additional software to
+              accommodate the Tkinter toolkit. To learn more or to trouble
+              shoot, see these pages:
+            </p>
+
+            <ul>
+              <li>
+                <a class="inner-link"
+                   href="https://www.python.org/download/mac/tcltk/"
+                   target="_blank">
+                   Tkinter on the Python Software Foundation Page</a>
+              </li>
+              <li>
+                <a class="inner-link"
+                   href="https://wiki.python.org/moin/TkInter"
+                   target="_blank">
+                   Tkinter on the Python wiki</a>
+              </li>
+              <li>
+                <a class="inner-link"
+                   href="https://stackoverflow.com/questions/36760839/why-my-python-installed-via-home-brew-not-include-tkinter"
+                   target="_blank">
+                   Why Didn't My Python Installation on Mac Include Tkinter?</a>
+              </li>
+
+            </ul>
+
+            <p>
+              To download the project, you can clone the repository using this
+              terminal command:
+            </p>
 
             <code class="display-code">
               <div class="clone-command">
-                git clone https://github.com/wbchristerson/arcade-game.git
+                git clone https://github.com/wbchristerson/database.git
               </div>
             </code>
 
@@ -195,17 +342,28 @@
             <ul>
               <li>Navigate to
                 <a class="inner-link"
-                   href="https://github.com/wbchristerson/arcade-game"
+                   href="https://github.com/wbchristerson/database"
                    target="_blank">
                    this</a>
                   page.
               </li>
               <li>Click the green "Clone or download" button towards the right then choose "Download ZIP".</li>
-              <li>Find the folder <code>arcade-game-master</code> in your Downloads folder or wherever it was placed on your device.</li>
-              <li>Right click and choose "Extract All" then extract.</li>
-              <li>Open your browser and use <code>Ctrl + O</code> (for Windows machines) to open the file selector on your device.</li>
-              <li>Go to <code>arcade-game-master</code>, enter <code>arcade-game-master</code> again, then select <code>index.html</code>. The game screen will appear.</li>
+              <li>Find the folder <code>database-master</code> in your Downloads folder or wherever it was placed on your device.</li>
+              <li>Right click and choose "Extract All"</li>
+              <li>Go to <code>database-master</code>, enter <code>database-master</code> again, then double click <code>database.py</code>. The menu will appear.</li>
             </ul>
+
+            <p>
+              Note: The project comes with a sample of database entries so as to
+              see how the application works. If you wish to delete these entries
+              and begin with a completely blank database, then double click the
+              file <code>delete_database.py</code>. A window will open prompting you to
+              confirm that you wish to delete all existing entries. To continue,
+              type 'y'. To cancel, type 'n'. For a more aesthetic view of the
+              problems originally maintained in the database, see
+              <code>sample_problems.pdf</code>.
+            </p>
+
 
           </div>
         </h3>

@@ -507,6 +507,32 @@ em {
   margin-right: 2%;
 }
 
+.database-left {
+  margin-left: 5%;
+  margin-right: 3%;
+}
+
+.database-right {
+  margin-left: 3%;
+  margin-right: 5%;
+}
+
+.database-search {
+  height: 400px;
+}
+
+.database-browse {
+  height: 390px;
+}
+
+.database-write {
+  height: 338px;
+}
+
+.database-edit {
+  height: 338px;
+}
+
 .pixel-left-pair {
   margin-left: 5%;
   margin-right: 5%;
@@ -808,7 +834,7 @@ em {
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1301px) {
   .frogger-small-scale {
     display: none;
   }
