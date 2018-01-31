@@ -128,18 +128,17 @@
           <div class="extra-content hide-content">
             <p>
               The application begins with the menu shown above. All other page
-              frames have return buttons back to this page. Clicking the "Look
-              Up An Entry" button brings you to the following frame in the first
-              image below. As mentioned above, you can make queries based on ID
-              in the database or one of the "Add Entry" attributes described
-              above. When the corresponding check box is clicked, an entry
-              widget appears to input data. If no items match the search
-              conditions, then a message to this effect appears in the following
-              text box. Otherwise, a series of search results appears, as seen
-              in the second image below. An "expanded view" check button can be
-              used to toggle between abridged and complete forms of data
-              entries. Warnings will be given for invalid or out of range IDs or
-              dates.
+              frames have return buttons back to this page. Clicking "Look Up An
+              Entry" brings you to the following frame in the first image below.
+              As mentioned above, you can make queries based on ID in the
+              database or one of the "Add Entry" attributes described above.
+              When the corresponding check box is clicked, an entry widget
+              appears to input data. If no items match the search conditions,
+              then a message to this effect appears in the following text box.
+              Otherwise, a series of search results appears, as seen in the
+              second image below. An "expanded view" check button can be used to
+              toggle between abridged and complete forms of data entries.
+              Warnings will be given for invalid or out-of-range IDs or dates.
             </p>
             <p>
               Note that the "mentioned words" and "source" fields will select
@@ -169,12 +168,11 @@
                  alt="The Database Search Page After A Query">
 
             <p>
-              Clicking the "Browse Entries" button brings you to the following
-              frame in the first image below. Clicking the browse button will
-              provide a list of all entries in the database as seen in the
-              second image below. Similar to the search page, clicking the
-              "expanded view" button will provide more information about items
-              (though not all available information).
+              Clicking "Browse Entries" brings you to the following frame in the
+              first image below. Clicking "Browse" will provide a list of all
+              entries in the database as seen in the second image below. Similar
+              to "Look Up An Entry", clicking the "expanded view" button will
+              provide more information about items.
             </p>
 
             <div class="pair-container frogger-pair">
@@ -200,15 +198,14 @@
                  alt="The Database Browse Page After Browsing">
 
             <p>
-              Clicking the "Add An Entry" button brings you to the following
-              frame in the first image below. New entry data is filled in as
-              matches the information on the search page as shown in the second
-              image below (aside from the ID, which the user has no control
-              over). The entry can be cancelled or saved, after which time the
-              user returns to the menu. Warnings are provided for invalid date
-              entries. The collection of all data entries is kept in a JSON file
-              as a Python list of "DataEntry" objects (which is stored in the
-              form of a list of Python dictionaries for serialization).
+              Clicking "Add An Entry" brings you to the following frame in the
+              first image below. The fields for a new data entry match those on
+              the "Look Up An Entry" page, as seen in the second image below.
+              The entry can be cancelled or saved, after which you return to the
+              menu. Warnings are provided for invalid date entries. The
+              collection of all data entries is kept in a JSON file as a list of
+              "DataEntry" objects (which is stored in the form of a list of
+              Python dictionaries for serialization).
             </p>
 
             <div class="pair-container frogger-pair">
@@ -234,15 +231,14 @@
                  alt="The Database Write Page After Inputting An Entry">
 
             <p>
-              Clicking the "Edit An Entry" page brings you to the following
-              frame in the first image below. Input an ID and click the edit
-              button to update an entry. The fields will be populated with the
-              corresponding data for the entry with the provided ID as shown
-              below in the second image. If the ID is invalid or out of range
-              then a warning appears. Similarly, warnings appear for updating a
-              date to an invalid choice. When finished updating, click the save
-              button. If you do not wish to keep the changes, cancel. In both
-              cases you will return to the menu page.
+              Clicking "Edit An Entry" brings you to the following frame in the
+              first image below. Input an ID and click "Edit" to update an
+              entry. The fields will be populated with the corresponding data,
+              as shown below in the second image. If the ID is invalid or out of
+              range then a warning appears. Similarly, warnings appear for
+              updating a date to an invalid choice. When finished updating,
+              click the save button. If you do not wish to keep the changes,
+              cancel. In both cases, you will return to the menu page.
             </p>
 
             <div class="pair-container frogger-pair">
@@ -289,9 +285,9 @@
 
           <div class="extra-content hide-content">
             <p>
-              You will need to have Python installed on your computer. If you do
-              not have it installed, you can download it for free. For details,
-              see
+              Python must be installed on your computer to run the application.
+              If you do not have it installed, you can download it for free. For
+              details, see
               <a class="inner-link"
                  href="https://www.python.org/downloads/"
                  target="_blank">this</a> page. For reference, this project was
@@ -360,12 +356,12 @@
             <p>
               Note: The project comes with sample database entries to illustrate
               how the application works. If you wish to delete these entries and
-              begin with a completely blank database, then double click the file
+              begin with a completely blank database, double click the file
               <code>delete_database.py</code>. A window will open, prompting you
               to confirm that you wish to delete all existing entries. To
-              continue, type 'y'. To cancel, type 'n'. For a more aesthetic view
-              of the problems originally maintained in the database, see
-              <code>sample_problems.pdf</code>.
+              continue, type 'y'. To cancel, type 'n'. For a more aesthetically
+              pleasing presentation of the original problems in the database,
+              see <code>sample_problems.pdf</code>.
             </p>
 
 
