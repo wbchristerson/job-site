@@ -42,23 +42,18 @@
       <span class="project-text project-title">Mathematical Database</span>
       <img class="added-image normal-image pale-edge" src="img/database-home.png" alt="A sample image of the database main menu.">
       <h3 class="project-text description">
-        This project is a small-scale database built using Python and the
-        graphical user interface package Tkinter. The database is meant to
-        store solutions to challenging mathematical puzzles and problems drawn
+        This project is a small-scale database that uses Python and the
+        graphical user interface package, Tkinter. The database stores solutions
+        to challenging mathematical puzzles and problems drawn
         from various sources, including mathematical olympiads; however, it
-        can easily be adapted to store other information. This seemed like a
-        valuable tool to have for reference and was inspired by this
-          <a class="inner-link"
-             href="https://artofproblemsolving.com/community/u53544h1559064p9530694"
-             target="_blank">post</a>
-        on the website Art of Problem Solving. To learn more about its
-        structure, design, and how to download, see below. For full
-        documentation, see
+        can easily be adapted to store other information. To learn more about
+        the project's structure, design, and how to download it, see below. For
+        full documentation, see
           <a class="inner-link"
              href="https://github.com/wbchristerson/database"
              target="_blank">this GitHub page</a>
-        (most of the below additional information is provided in a more detailed
-        form in the README.md file at that page).
+        (a more detailed description of this information is available in the
+        README.md file there).
       </h3>
       <div class="details">
         <h3 class="project-text sub-section">
@@ -77,30 +72,40 @@
 
           <div class="extra-content hide-content">
             <ul>
-              <li>The database opens with a menu page and has buttons sending
-                  the user to a search page ("Look Up An Entry"), a browse page
-                  ("Browse Entries"), an entry addition page ("Add An Entry"),
-                  and an entry editing page ("Edit An Entry").
+              <li>The database opens with a menu page and the following buttons:
+                "Look Up An Entry", "Browse Entries", "Add An Entry", "Edit An
+                Entry".
               </li>
-              <li>The search page can be used to look up entries based on
-                  various pieces of information (listed below) for the entry
-                  addition page as well as by an assigned ID. An expanded view
-                  for matching data entries is also available.
+              <li>"Look Up An Entry" searches for various pieces of information
+                  and by an assigned ID. An expanded view for matching data
+                  entries is also available.
               </li>
-              <li>The browse page lists all data entries in both a short form
+              <li>"Browse Entries" lists all data entries in both a short form
                   and an expanded view, similar to the search page.
               </li>
-              <li>The entry addition page can be used to input information about
-                  the data entry. Since the main purpose of the database is to
-                  store mathematical puzzles and problems, accepted data
-                  includes the topic, key words (tags), the source, the date of
-                  completion, the level of difficulty, the problem/puzzle
-                  statement (both with and without LaTeX formatting), the
-                  solution (also both with and without LaTeX formatting), and
-                  additional notes.
+              <li>"Write Page" adds data entries. Since the main purpose of the
+                  database is to store mathematical puzzles and problems,
+                  accepted data include:
+                  <ul>
+                    <li>topic</li>
+                    <li>key words (tags)</li>
+                    <li>source</li>
+                    <li>date of completion</li>
+                    <li>level of difficulty</li>
+                    <li>problem/puzzle statement (with or without LaTeX formatting)</li>
+                    <li>solution (with or without LaTeX formatting)</li>
+                    <li>additional notes</li>
+                  </ul>
               </li>
-              <li>The entry editing page can be used to alter information for
-                existing data entries. IDs cannot be changed.
+              <li>"Edit An Entry" alters information about existing data
+                entries. IDs cannot be changed.
+              </li>
+              <li>The project was inspired by
+              this
+                <a class="inner-link"
+                   href="https://artofproblemsolving.com/community/u53544h1559064p9530694"
+                   target="_blank">post</a>
+              by v_Enhance on the website Art of Problem Solving.
               </li>
             </ul>
           </div>
@@ -124,22 +129,21 @@
             <p>
               The application begins with the menu shown above. All other page
               frames have return buttons back to this page. Clicking the "Look
-              Up An Entry" button brings you to the following frame on the left
-              below. As mentioned above, there are options to make queries based
-               on ID in the database, tags (keywords), topic, source, date,
-              difficulty, and mentioned words. When the corresponding check box
-              is clicked, an entry widget appears to input data. Aside from the
-              date and difficulty fields, a checked item without corresponding
-              data will be interpreted as if the no filtering by that item were
-              considered. If no items match the search conditions, then a
-              message to this effect appears in the following text box.
-              Otherwise, a series of search results appears, prefaced by a
-              statement with the number of search results, as seen on right
-              below. An "expanded view" check button can be used to toggle
-              between abridged and complete forms of data entries. Warnings will
-               be given for invalid or out of range IDs or dates. Note that the
-              "mentioned words" and "source" fields will select entries which
-              match any single searched word (even among many).
+              Up An Entry" button brings you to the following frame in the first
+              image below. As mentioned above, you can make queries based on ID
+              in the database or one of the "Add Entry" attributes described
+              above. When the corresponding check box is clicked, an entry
+              widget appears to input data. If no items match the search
+              conditions, then a message to this effect appears in the following
+              text box. Otherwise, a series of search results appears, as seen
+              in the second image below. An "expanded view" check button can be
+              used to toggle between abridged and complete forms of data
+              entries. Warnings will be given for invalid or out of range IDs or
+              dates.
+            </p>
+            <p>
+              Note that the "mentioned words" and "source" fields will select
+              entries which match any single searched word (even among many).
             </p>
 
             <div class="pair-container frogger-pair">
@@ -166,11 +170,11 @@
 
             <p>
               Clicking the "Browse Entries" button brings you to the following
-              frame on the left below. Clicking the browse button will provide a
-              list of all entries in the database as seen on the right below.
-              Similar to the search page, clicking the "expanded view" button
-              will provide more information about items (though not all
-              available information).
+              frame in the first image below. Clicking the browse button will
+              provide a list of all entries in the database as seen in the
+              second image below. Similar to the search page, clicking the
+              "expanded view" button will provide more information about items
+              (though not all available information).
             </p>
 
             <div class="pair-container frogger-pair">
@@ -197,14 +201,14 @@
 
             <p>
               Clicking the "Add An Entry" button brings you to the following
-              frame on the left below. New entry data is filled in as matches
-              the information on the search page as shown on the right below
-              (aside from the ID, which the user has no control over). The entry
-               can be cancelled or saved, after which time the user returns to
-              the menu. Warnings are provided for invalid date entries. The
-              collection of all data entries is kept in a JSON file as a Python
-              list of "DataEntry" objects (which is stored in the form of a
-              list of dictionaries for serialization).
+              frame in the first image below. New entry data is filled in as
+              matches the information on the search page as shown in the second
+              image below (aside from the ID, which the user has no control
+              over). The entry can be cancelled or saved, after which time the
+              user returns to the menu. Warnings are provided for invalid date
+              entries. The collection of all data entries is kept in a JSON file
+              as a Python list of "DataEntry" objects (which is stored in the
+              form of a list of Python dictionaries for serialization).
             </p>
 
             <div class="pair-container frogger-pair">
@@ -231,14 +235,14 @@
 
             <p>
               Clicking the "Edit An Entry" page brings you to the following
-              frame on the left below. Input an ID and click the edit button to
-              update an entry. The fields will be populated with the
+              frame in the first image below. Input an ID and click the edit
+              button to update an entry. The fields will be populated with the
               corresponding data for the entry with the provided ID as shown
-              below in the right. If the ID is invalid or out of range then a
-              warning appears. Similarly, warnings appear for updating a date to
-              an invalid choice. When finished updating, click the save button.
-              If you do not wish to keep the changes, cancel. In both cases you
-              will return to the menu page.
+              below in the second image. If the ID is invalid or out of range
+              then a warning appears. Similarly, warnings appear for updating a
+              date to an invalid choice. When finished updating, click the save
+              button. If you do not wish to keep the changes, cancel. In both
+              cases you will return to the menu page.
             </p>
 
             <div class="pair-container frogger-pair">
@@ -286,7 +290,7 @@
           <div class="extra-content hide-content">
             <p>
               You will need to have Python installed on your computer. If you do
-              not have it installed, you can download it for free. For details
+              not have it installed, you can download it for free. For details,
               see
               <a class="inner-link"
                  href="https://www.python.org/downloads/"
@@ -354,13 +358,13 @@
             </ul>
 
             <p>
-              Note: The project comes with a sample of database entries so as to
-              see how the application works. If you wish to delete these entries
-              and begin with a completely blank database, then double click the
-              file <code>delete_database.py</code>. A window will open prompting you to
-              confirm that you wish to delete all existing entries. To continue,
-              type 'y'. To cancel, type 'n'. For a more aesthetic view of the
-              problems originally maintained in the database, see
+              Note: The project comes with sample database entries to illustrate
+              how the application works. If you wish to delete these entries and
+              begin with a completely blank database, then double click the file
+              <code>delete_database.py</code>. A window will open, prompting you
+              to confirm that you wish to delete all existing entries. To
+              continue, type 'y'. To cancel, type 'n'. For a more aesthetic view
+              of the problems originally maintained in the database, see
               <code>sample_problems.pdf</code>.
             </p>
 
