@@ -574,10 +574,24 @@ em {
   align-content: space-between;
 }
 
-.project-picture {
+.project-unit {
   width: 25%;
   height: 25%;
   margin: 10px 4%;
+}
+
+.project-image {
+  width: 100%
+}
+
+.project-unit-title {
+  text-align: center;
+  font: normal 18px "proxima-nova", sans-serif;
+  font-weight: 300;
+  letter-spacing: .015em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #737373;
 }
 
 .center-footer {
