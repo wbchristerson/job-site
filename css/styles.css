@@ -580,6 +580,10 @@ em {
   margin: 10px 4%;
 }
 
+.center-footer {
+  text-align: center;
+}
+
 @media screen and (min-width: 601px) {
   .narrow-email {
     display: none;
