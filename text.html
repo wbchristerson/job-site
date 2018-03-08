@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A Beginner Portfolio Site">
+  <meta name="author" content="Aloysius">
+  <title>Will Christerson</title>
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="wrapper clearfix">
+      <a class="site-title"
+         href="https://wbchristerson.github.io/job-site">Will Christerson</a>
+
+      <nav class="site-nav">
+        <a href="#" class="menu-icon">
+          <i class="fa fa-reorder"></i>
+        </a>
+
+        <div class="trigger">
+          <a class="page-link select-border" href="https://wbchristerson.github.io/">Home</a>
+          <a class="page-link" href="https://wbchristerson.github.io/">Projects</a>
+          <a class="page-link" href="https://wbchristerson.github.io/">Contact</a>
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <div class="projects-page hide-content">
+
+    <div class="project">
+      <span class="project-text project-title">Mathematical Database</span>
+      <img class="added-image normal-image pale-edge" src="img/database-home.png" alt="A sample image of the database main menu.">
+      <h3 class="project-text description">
+        This project is a small-scale database that uses Python and the
+        graphical user interface package, Tkinter. The database stores solutions
+        to challenging mathematical puzzles and problems drawn
+        from various sources, including mathematical olympiads; however, it
+        can easily be adapted to store other information. To learn more about
+        the project's structure, design, and how to download it, see below. For
+        full documentation, see
+          <a class="inner-link"
+             href="https://github.com/wbchristerson/database"
+             target="_blank">this GitHub page</a>
+        (a more detailed description of this information is available in the
+        README.md file there).
+      </h3>
+      <div class="details">
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-structure">
+              Structure
+            </div>
+          </div>
+
+
+          <div class="extra-content hide-content">
+            <p>The database opens with a menu page and the following buttons:
+               "Look Up An Entry"; "Browse Entries"; "Add An Entry"; and "Edit
+               An Entry".
+            </p>
+            <ul>
+              <li>"Look Up An Entry" searches for various pieces of information
+                  or by an assigned ID. An expanded view for matching data
+                  entries is also available.
+              </li>
+              <li>"Browse Entries" lists all data entries in both a short form
+                  and an expanded view, similar to "Look Up An Entry".
+              </li>
+              <li>"Write Page" adds data entries. Since the main purpose of the
+                  database is to store mathematical puzzles and problems,
+                  accepted data include:
+                  <ul>
+                    <li>topic</li>
+                    <li>key words (tags)</li>
+                    <li>source</li>
+                    <li>date of completion</li>
+                    <li>level of difficulty</li>
+                    <li>problem/puzzle statement (with or without LaTeX formatting)</li>
+                    <li>solution (with or without LaTeX formatting)</li>
+                    <li>additional notes</li>
+                  </ul>
+              </li>
+              <li>"Edit An Entry" alters information about existing data
+                entries. IDs cannot be changed.
+              </li>
+            </ul>
+            <p>The project was inspired by
+              this
+              <a class="inner-link"
+              href="https://artofproblemsolving.com/community/u53544h1559064p9530694"
+              target="_blank">post</a>
+              by v_Enhance on the website Art of Problem Solving.
+            </p>
+          </div>
+        </h3>
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-design">
+              Design
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              The application begins with the menu shown above. All other page
+              frames have return buttons back to this page. Clicking "Look Up An
+              Entry" brings you to the following frame in the first image below.
+              As mentioned above, you can make queries based on ID in the
+              database or one of the "Add Entry" attributes described above.
+              When the corresponding check box is clicked, an entry widget
+              appears to input data. If no items match the search conditions,
+              then a message to this effect appears in the following text box.
+              Otherwise, a series of search results appears, as seen in the
+              second image below. An "expanded view" check button can be used to
+              toggle between abridged and complete forms of data entries.
+              Warnings will be given for invalid or out-of-range IDs or dates.
+            </p>
+            <p>
+              Note that the "Mentioned Words" and "Source" fields will select
+              entries which match any single searched word (even among many).
+            </p>
+
+            <div class="pair-container frogger-pair">
+              <img class="added-image pair-image database-left pale-edge
+                          database-search"
+                   src="img/database-search-blank.png"
+                   alt="The Blank Database Search Page">
+
+              <img class="added-image pair-image database-right pale-edge
+                          database-search"
+                   src="img/database-search-data.png"
+                   alt="The Database Search Page After A Query">
+
+              <span class="stretch"></span>
+            </div>
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-search-blank.png"
+                 alt="The Blank Database Search Page">
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-search-data.png"
+                 alt="The Database Search Page After A Query">
+
+            <p>
+              Clicking "Browse Entries" brings you to the following frame in the
+              first image below. Clicking "Browse" will provide a list of all
+              entries in the database as seen in the second image below. Similar
+              to "Look Up An Entry", clicking the "Expanded View" button will
+              provide more information about items.
+            </p>
+
+            <div class="pair-container frogger-pair">
+              <img class="added-image pair-image database-left pale-edge
+                          database-browse"
+                   src="img/database-browse-blank.png"
+                   alt="The Blank Database Browse Page">
+
+              <img class="added-image pair-image database-right pale-edge
+                          database-browse"
+                   src="img/database-browse-data.png"
+                   alt="The Database Browse Page After Browsing">
+
+              <span class="stretch"></span>
+            </div>
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-browse-blank.png"
+                 alt="The Blank Database Browse Page">
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-browse-data.png"
+                 alt="The Database Browse Page After Browsing">
+
+            <p>
+              Clicking "Add An Entry" brings you to the following frame in the
+              first image below. The fields for a new data entry match those on
+              the "Look Up An Entry" page, as seen in the second image below.
+              The entry can be cancelled or saved, after which you return to the
+              menu. Warnings are provided for invalid date entries. The
+              collection of all data entries is kept in a JSON file as a list of
+              "DataEntry" objects (which is stored in the form of a list of
+              Python dictionaries for serialization).
+            </p>
+
+            <div class="pair-container frogger-pair">
+              <img class="added-image pair-image database-left pale-edge
+                          database-write"
+                   src="img/database-write-blank.png"
+                   alt="The Blank Database Write Page">
+
+              <img class="added-image pair-image database-right pale-edge
+                          database-write"
+                   src="img/database-write-data.png"
+                   alt="The Database Write Page After Inputting An Entry">
+
+              <span class="stretch"></span>
+            </div>
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-write-blank.png"
+                 alt="The Blank Database Write Page">
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-write-data.png"
+                 alt="The Database Write Page After Inputting An Entry">
+
+            <p>
+              Clicking "Edit An Entry" brings you to the following frame in the
+              first image below. Input an ID and click "Edit" to update an
+              entry. The fields will be populated with the corresponding data,
+              as shown below in the second image. If the ID is invalid or out of
+              range then a warning appears. Similarly, warnings appear for
+              updating a date to an invalid choice. When finished updating,
+              click the save button. If you do not wish to keep the changes,
+              cancel. In both cases, you will return to the menu page.
+            </p>
+
+            <div class="pair-container frogger-pair">
+              <img class="added-image pair-image database-left pale-edge
+                          database-edit"
+                   src="img/database-edit-blank.png"
+                   alt="The Blank Database Edit Page">
+
+              <img class="added-image pair-image database-right pale-edge
+                          database-edit"
+                   src="img/database-edit-data.png"
+                   alt="The Database Edit Page After Choosing An Entry To Edit">
+
+              <span class="stretch"></span>
+            </div>
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-edit-blank.png"
+                 alt="The Blank Database Edit Page">
+
+            <img class="added-image normal-image frogger-small-scale pale-edge"
+                 src="img/database-edit-data.png"
+                 alt="The Database Edit Page After Choosing An Entry To Edit">
+
+
+          </div>
+
+        </h3>
+
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-running">
+              Running The Application
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              Python must be installed on your computer to run the application.
+              If you do not have it installed, you can download it for free. For
+              details, see
+              <a class="inner-link"
+                 href="https://www.python.org/downloads/"
+                 target="_blank">this</a> page. For reference, this project was
+              created using Python version 3.1.
+            </p>
+
+            <p>
+              If you are running an operating system other than Windows, then
+              you may have to download and install additional software to
+              accommodate the Tkinter toolkit. To learn more or to trouble
+              shoot, see these pages:
+            </p>
+
+            <ul>
+              <li>
+                <a class="inner-link"
+                   href="https://www.python.org/download/mac/tcltk/"
+                   target="_blank">
+                   Tkinter on the Python Software Foundation Page</a>
+              </li>
+              <li>
+                <a class="inner-link"
+                   href="https://wiki.python.org/moin/TkInter"
+                   target="_blank">
+                   Tkinter on the Python wiki</a>
+              </li>
+              <li>
+                <a class="inner-link"
+                   href="https://stackoverflow.com/questions/36760839/why-my-python-installed-via-home-brew-not-include-tkinter"
+                   target="_blank">
+                   Why Didn't My Python Installation on Mac Include Tkinter?</a>
+              </li>
+
+            </ul>
+
+            <p>
+              To download the project, you can clone the repository using this
+              terminal command:
+            </p>
+
+            <code class="display-code">
+              <div class="clone-command">
+                git clone https://github.com/wbchristerson/database.git
+              </div>
+            </code>
+
+            <p>
+              Alternatively, follow the instructions below to download to a hard
+              drive:
+            </p>
+
+            <ul>
+              <li>Navigate to
+                <a class="inner-link"
+                   href="https://github.com/wbchristerson/database"
+                   target="_blank">
+                   this</a>
+                  page.
+              </li>
+              <li>Click the green "Clone or download" button towards the right then choose "Download ZIP".</li>
+              <li>Find the folder <code>database-master</code> in your Downloads folder or wherever it was placed on your device.</li>
+              <li>Right click and choose "Extract All"</li>
+              <li>Go to <code>database-master</code>, enter <code>database-master</code> again, then double click <code>database.py</code>. The menu will appear.</li>
+            </ul>
+
+            <p>
+              Note: The project comes with sample database entries to illustrate
+              how the application works. If you wish to delete these entries and
+              begin with a completely blank database, double click the file
+              <code>delete_database.py</code>. A window will open, prompting you
+              to confirm that you wish to delete all existing entries. To
+              continue, type 'y'. To cancel, type 'n'. For a more aesthetically
+              pleasing presentation of the original problems in the database,
+              see <code>sample_problems.pdf</code>.
+            </p>
+
+
+          </div>
+        </h3>
+
+      </div>
+    </div>
+
+
+
+    <div class="border">
+    </div>
+
+
+
+    <div class="project">
+      <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/arcade-game/" target="_blank">Frogger</a></span>
+      <img class="added-image normal-image" src="img/general-game.png" alt="A sample image of the game screen during use.">
+      <h3 class="project-text description">
+        This project re-creates the arcade game Frogger using JavaScript and a
+        basic HTML/CSS skeleton. To try the game, click
+          <a class="inner-link"
+             href="https://wbchristerson.github.io/arcade-game/"
+             target="_blank">here</a>.
+        To learn more about its structure, design, and how to download, see
+        below. For full documentation, see
+          <a class="inner-link"
+             href="https://github.com/wbchristerson/arcade-game"
+             target="_blank">this GitHub page</a>
+        (most of the below additional information is provided in a more detailed
+        form in the README.md file at that page).
+      </h3>
+      <div class="details">
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+          <!-- <button class="topic-label"> -->
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-structure">
+              Structure
+            </div>
+
+          <!-- </button> -->
+
+          </div>
+
+
+          <div class="extra-content hide-content">
+            <ul>
+              <li>The game has 15 levels which the player must complete while avoiding enemy bugs.</li>
+              <li>You traverse the board using the arrow keys.</li>
+              <li>If you come in contact with a bug, you lose a life and return to the default position on screen.</li>
+              <li>You can also collect gems (of varying point values) and stars (which give extra lives).</li>
+              <li>If you lose all your lives, the game is over. If you complete all 15 levels with at least one life left, you win.</li>
+              <li>When the game ends, you may play again or return to the introductory page.</li>
+            </ul>
+          </div>
+        </h3>
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-design">
+              Design
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              The game begins with an introductory page explaining how to
+              play. It also lists the player's possible avatars, along with
+              which keys to press to switch avatars. Begin by pressing the
+              "space" key.
+            </p>
+
+            <img class="added-image normal-image" src="img/intro-page.png"
+                 alt="A screenshot of the game's introductory page">
+
+            <p>
+              The game page includes a background of grass, brick, and water.
+              Your score, remaining lives, and level appear at the bottom. You
+              have to cross the board while avoiding enemy bugs. Gems and stars
+              appear occasionally, and you get points for every gem you collect:
+              3 for blue gems, 6 for green gems, and 9 for orange gems.
+            </p>
+
+            <img class="added-image normal-image" src="img/game-page.png"
+                 alt="A screenshot of the game during play">
+
+            <p>
+              The end page resembles the introductory page and congratulates you
+              on completing the game.
+            </p>
+
+            <div class="pair-container frogger-pair">
+              <img class="added-image pair-image frogger-left-pair"
+                   src="img/end-lose-page.png"
+                   alt="A screenshot of the end page upon a loss">
+
+              <img class="added-image pair-image frogger-right-pair"
+                   src="img/end-page.png"
+                   alt="A screenshot of the end page upon a win">
+
+              <span class="stretch"></span>
+            </div>
+
+            <img class="added-image normal-image frogger-small-scale"
+                 src="img/end-lose-page.png"
+                 alt="A screenshot of the end page upon a loss">
+
+            <img class="added-image normal-image frogger-small-scale"
+                 src="img/end-page.png"
+                 alt="A screenshot of the end page upon a win">
+
+            <p>
+              The game becomes increasingly difficult. The chance of
+              each of three independent rocks appearing on screen increases up
+              to level 5, after which time they will all always appear (though
+              sometimes overlapping each other). One strategy to
+              avoid losing lives is to wait for the right half of the screen
+              to become clear and cross from that half (since enemy bugs always
+              cross the screen from left to right). To further increase
+              difficulty beyond level 5, a fourth rock will always appear
+              somewhere in the rightmost column.
+            </p>
+
+          </div>
+
+        </h3>
+
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-running">
+              Running The Application
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              Run the application in your browser by clicking
+              <a class="inner-link"
+                 href="https://wbchristerson.github.io/arcade-game/"
+                 target="_blank">here</a>. To download, clone the repository
+                 using this terminal command:
+            </p>
+
+            <!-- <pre>
+              <code>
+                git clone https://github.com/wbchristerson/arcade-game.git
+              </code>
+            </pre> -->
+
+            <code class="display-code">
+              <div class="clone-command">
+                git clone https://github.com/wbchristerson/arcade-game.git
+              </div>
+            </code>
+
+            <p>
+              Alternatively, follow the instructions below to download to a hard
+              drive:
+            </p>
+
+            <ul>
+              <li>Navigate to
+                <a class="inner-link"
+                   href="https://github.com/wbchristerson/arcade-game"
+                   target="_blank">
+                   this</a>
+                  page.
+              </li>
+              <li>Click the green "Clone or download" button towards the right then choose "Download ZIP".</li>
+              <li>Find the folder <code>arcade-game-master</code> in your Downloads folder or wherever it was placed on your device.</li>
+              <li>Right click and choose "Extract All" then extract.</li>
+              <li>Open your browser and use <code>Ctrl + O</code> (for Windows machines) to open the file selector on your device.</li>
+              <li>Go to <code>arcade-game-master</code>, enter <code>arcade-game-master</code> again, then select <code>index.html</code>. The game screen will appear.</li>
+            </ul>
+
+          </div>
+        </h3>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="border">
+    </div>
+
+
+
+
+    <div class="project">
+      <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/memory-game/" target="_blank">Matching Game</a></span>
+      <img class="added-image normal-image pale-edge" src="img/display.png" alt="A sample image of the matching game during use.">
+      <h3 class="project-text description">
+        Using HTML, CSS, and JavaScript, this two-page application challenges
+        the player to find all matching pairs of cards in the fewest moves. To
+        try the game, click
+          <a class="inner-link"
+             href="https://wbchristerson.github.io/memory-game/"
+             target="_blank">
+             here</a>.
+        To learn more about its structure, design, and how to
+        download, see below. For full documentation, see
+          <a class="inner-link"
+             href="https://github.com/wbchristerson/memory-game"
+             target="_blank">
+            this GitHub page</a>
+        (most of the below additional information is available in the
+        README.md file at that page).
+      </h3>
+      <div class="details">
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-structure">
+              Structure
+            </div>
+          </div>
+
+          <div class="extra-content hide-content">
+            <ul>
+              <li>You must find the 8 matching images from cards that are turned
+                over.</li>
+              <li>When you click a card, it flips, turns blue, and the hidden
+                image appears.</li>
+              <li>When you make a match, the cards change color and the images
+                remain visible.</li>
+              <li>If you do not make a match, the cards flip back over to their
+                original display.</li>
+              <li>Once you match all cards, the game is over and the screen
+                congratulates you, listing various statistics about your game.
+                To play again, click the "play again" button.</li>
+            </ul>
+          </div>
+        </h3>
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-design">
+              Design
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              The main screen includes a timer, a move counter, a reset button,
+              and a star rating. Below is an example of the interface:
+            </p>
+
+            <img class="added-image normal-image pale-edge" src="img/memory-game-page.png"
+                 alt="A screenshot of the game's introductory page">
+
+            <p>
+              Finishing with at most 15 moves yields a 3-star rating,
+              finishing with more than 16 moves but at most 25 yields a 2-star
+              rating, and finishing with more than 25 moves yields a 1-star
+              rating. Here is an example end page:
+            </p>
+
+            <img class="normal-image special-margin" src="img/memory-end-page.png"
+                 alt="A screenshot of the game's end page">
+          </div>
+
+        </h3>
+
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-running">
+              Running The Application
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              Run the application in your browser by clicking
+              <a class="inner-link"
+                 href="https://wbchristerson.github.io/memory-game/"
+                 target="_blank">here</a>. To download, clone the repository
+              using this terminal command:
+            </p>
+
+            <code class="display-code">
+              <div class="clone-command">
+                git clone https://github.com/wbchristerson/memory-game.git
+              </div>
+            </code>
+
+            <p>
+              Alternatively, follow the instructions below to download to a hard drive:
+            </p>
+
+            <ul>
+              <li>Navigate to
+                <a class="inner-link"
+                   href="https://github.com/wbchristerson/memory-game"
+                   target="_blank">
+                   this</a>
+                  page.
+              </li>
+              <li>Click the green "Clone or download" button towards the right then choose "Download ZIP".</li>
+              <li>Find the folder <code>memory-game-master</code> in your Downloads folder or wherever it was placed on your device.</li>
+              <li>Right click and choose "Extract All" then extract.</li>
+              <li>Open your browser and use <code>Ctrl + O</code> (for Windows machines) to open the file selector on your device.</li>
+              <li>Go to <code>memory-game-master</code>, enter <code>memory-game-master</code> again, then select <code>index.html</code>. The game screen will appear.</li>
+            </ul>
+
+
+          </div>
+        </h3>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="border">
+    </div>
+
+
+
+
+
+
+
+
+    <div class="project">
+      <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/pixel-art/" target="_blank">Pixel Art Maker</a></span>
+      <img class="added-image normal-image pale-edge" src="img/canvas-example.png" alt="A sample creation using this application.">
+      <h3 class="project-text description">
+        This project is a one-page application to make colorful pixel images of
+        varying grid sizes. To try the application, click
+          <a class="inner-link"
+             href="https://wbchristerson.github.io/pixel-art/"
+             target="_blank">
+             here</a>.
+        To learn more about its structure, design, and how to download, see
+        below. For full documentation, see
+          <a class="inner-link"
+             href="https://github.com/wbchristerson/pixel-art"
+             target="_blank">
+            this GitHub page</a>
+        (most of the below additional information is provided in a more detailed
+        form in the README.md file at that page).
+      </h3>
+      <div class="details">
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-structure">
+              Structure
+            </div>
+          </div>
+
+          <div class="extra-content hide-content">
+            <ul>
+              <li>The dimensions of the pixel grid can each be anything from 1 to 50.</li>
+              <li>Once the grid is created, you can choose various colors for the individual pixels.</li>
+            </ul>
+          </div>
+        </h3>
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-design">
+              Design
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              The application is a single page which begins with no shown grid
+              and a default color of black.
+            </p>
+
+            <img class="pixel-image color-image pale-edge short-image" src="img/canvas-intro.png"
+                 alt="Pixel Art Maker Display Before Choosing The Grid Size Or Color">
+
+            <p>
+              The dimensions of the grid are determined by an input element,
+              which is designed to ensure that you can only enter a number
+              between 1 and 50.
+            </p>
+
+            <img class="added-image normal-image pale-edge" src="img/canvas-grid.png"
+                 alt="Pixel Art Maker Display After Choosing The Grid Size But Not The Color">
+
+            <p>
+              By clicking on the color option, a window appears which shows
+              the various colors that can be generated.
+            </p>
+
+            <img class="added-image normal-image pale-edge color-image" src="img/canvas-color.png"
+                 alt="Pixel Art Maker Display While Selecting A Canvas Color">
+
+            <p>
+              Color the grid by clicking on individual pixels:
+            </p>
+
+            <div class="pair-container pixel-pair">
+              <img class="pale-edge pair-image pixel-left-pair"
+                   src="img/canvas-blanket.png"
+                   alt="Pixel Art Maker Display While Selecting A Canvas Color">
+
+              <img class="pale-edge pair-image pixel-right-pair"
+                   src="img/canvas-beach.png"
+                   alt="Pixel Art Maker Example Image Of Beach">
+
+              <span class="stretch"></span>
+            </div>
+
+            <img class="added-image normal-image pale-edge pixel-small-scale"
+                 src="img/canvas-blanket.png"
+                 alt="Pixel Art Maker Display While Selecting A Canvas Color">
+
+            <img class="added-image normal-image pale-edge pixel-small-scale"
+                 src="img/canvas-beach.png"
+                 alt="Pixel Art Maker Example Image Of Beach">
+          </div>
+
+        </h3>
+
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-running">
+              Running The Application
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              Run the application in your browser by clicking
+              <a class="inner-link"
+                 href="https://wbchristerson.github.io/pixel-art/"
+                 target="_blank">here</a>.
+              To download, clone the repository using this terminal
+              command:
+            </p>
+
+            <code class="display-code">
+              <div class="clone-command">
+                git clone https://github.com/wbchristerson/pixel-art.git
+              </div>
+            </code>
+
+            <p>
+              Alternatively, follow the instructions below to download to a hard
+              drive:
+            </p>
+
+            <ul>
+              <li>Navigate to
+                <a class="inner-link"
+                   href="https://github.com/wbchristerson/pixel-art"
+                   target="_blank">
+                   this</a>
+                page.
+              </li>
+              <li>Click the green "Clone or download" button above then choose "Download ZIP".</li>
+              <li>Find the folder `pixel-art-master` in your Downloads folder or wherever it was placed on your device.</li>
+              <li>Right click and choose "Extract All".</li>
+              <li>Open your browser and use `Ctrl + O` (for Windows machines) to open the file selector on your device.</li>
+              <li>Go to `pixel-art-master`, enter `pixel-art-master` again, then select `index.html`. The game screen will appear.</li>
+            </ul>
+
+          </div>
+        </h3>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="border">
+    </div>
+
+
+
+    <h3 class="project-text description">
+      Note: The projects "Frogger", "Matching Game", and "Pixel Art Maker" are
+      all based on skeleton structures from Udacity. For more information, see
+      the initial commit on the appropriate GitHub page given above.
+
+    </h3>
+
+
+
+
+  </div>
+
+
+
+
+  <div class="about hide-content">
+    <h1 class="statement about-text about-greeting">Welcome!</h1>
+
+    <div class="statement about-text description">
+      This website showcases some projects that I have created in
+      various programming languages.
+    </div>
+
+    <div class="statement about-text description">
+      In May 2017, I graduated from Carnegie Mellon University with a Bachelor
+      of Science in Mathematics. I am interested in discrete math and computer
+      science, particularly algorithms. I am a native New Yorker and wish to
+      enter a career in either computer science or finance. To contact me,
+      please email me at <em>wbchristerson AT gmail DOT com</em>.
+      I also have a GitHub account under
+      <a class="inner-link" href="https://github.com/wbchristerson"
+         target="_blank">wbchristerson</a>.
+    </div>
+
+    <div class="statement about-text description">
+      For projects, see the "Projects" section above.
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="contact hide-content">
+    <div class="statement about-text contact-info">
+
+      <ul class="contact-list">
+        <li>
+          <i class="fa fa-envelope-o"></i>
+          Email: wbchristerson AT gmail DOT com
+        </li>
+
+        <li>
+          <img src="img/github-icon-blue.png" alt="GitHub Icon">
+          GitHub:
+          <a class="contact-link"
+             href="https://github.com/wbchristerson"
+             target="_blank">
+             wbchristerson
+           </a>
+        </li>
+
+        <li>
+          <img src="img/linkedin-logo-big.png" alt="LinkedIn Icon">
+          LinkedIn:
+          <a class="contact-link"
+             href="https://www.linkedin.com/in/william-christerson-a0354b156/"
+             target="_blank">
+             William Christerson
+           </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="spacer">
+  </div>
+
+
+
+
+
+
+
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <h2 class="footer-heading site-end">
+        Will Christerson
+      </h2>
+
+      <div class="content-wrapper">
+
+        <div class="flex-item first-item">
+          <ul class="contact-list">
+            <li>
+              <i class="fa fa-envelope-o"></i>
+              <span class="sub-title">wbchristerson AT gmail DOT com</span>
+            </li>
+            <li>
+              <img class="footer-git" src="img/github-icon-small.png" alt="GitHub Icon">
+              <a class="inner-link" href="https://github.com/wbchristerson" target="_blank"><span>wbchristerson</span></a>
+            </li>
+            <li>
+              <img src="img/linkedin-logo-small.png" alt="LinkedIn Icon">
+              <a class="inner-link" href="https://www.linkedin.com/in/william-christerson-a0354b156/" target="_blank"><span>William Christerson</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- https://seeklogo.com/vector-logo/268072/linkedin-icon# -->
+
+        <div class="flex-item second-item">
+          <p>
+            This site displays some small projects that I have created in
+            various programming languages. For information about these projects,
+            see "Projects". To contact me, please use the email listed <em class="wide-email">at the
+            left</em><em class="narrow-email">above</em>.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+<!-- https://www.linkedin.com/in/william-christerson-a0354b156/ -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
