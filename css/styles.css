@@ -601,8 +601,13 @@ em {
 
 .project-paragraph-wrapper p {
   width: 90%;
-  margin: 0 5%;
+  margin: 2% 5% 0;
   word-wrap: break-word;
+  font: normal 12px "proxima-nova", sans-serif;
+  font-weight: 200;
+  letter-spacing: .015em;
+  line-height: 1.68em;
+  color: #bbb;
 }
 
 .project-unit-title {
