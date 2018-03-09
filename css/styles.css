@@ -580,11 +580,28 @@ em {
   margin: 10px 4%;
 }
 
+.project-image-wrapper {
+  position: relative;
+}
+
 .project-image {
   height: 350px;
   width: 100%;
   cursor: pointer;
-  /* height: 150px; */
+}
+
+.project-paragraph-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.project-paragraph-wrapper p {
+  width: 90%;
+  margin: 0 5%;
+  word-wrap: break-word;
 }
 
 .project-unit-title {

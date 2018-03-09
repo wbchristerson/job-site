@@ -52,3 +52,12 @@ $( '.site-title' ).click(function(event) {
   event.preventDefault();
   setPage($( this ));
 })
+
+$( '.project-image-wrapper' ).hover(
+  function(event) {
+    $( this ).children( '.project-paragraph-wrapper' ).removeClass( 'hide-content' );
+  },
+  function(event) {
+    $( this ).children( '.project-paragraph-wrapper' ).addClass( 'hide-content' );
+  }
+)
