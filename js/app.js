@@ -1,3 +1,5 @@
+let currentPage = -1;
+
 let picIndex = {
   'project-image-wrapper pic0': 0,
   'project-image-wrapper pic1': 1,
@@ -64,22 +66,25 @@ function clearImages() {
   $( '.project.pic3' ).addClass( 'hide-content' );
 }
 
-function setPages(context) {
+function setNewPages(context) {
   clearImages();
   $( '.project-display' ).addClass( 'hide-content' );
   let classString = $( context ).attr( 'class' );
-  console.log('Class String: ' + classString);
   if (classString.indexOf('pic0') !== -1) {
     $( '.project.pic0' ).removeClass( 'hide-content' );
+    currentPage = 0;
   }
   else if (classString.indexOf('pic1') !== -1) {
     $( '.project.pic1' ).removeClass( 'hide-content' );
+    currentPage = 1;
   }
   else if (classString.indexOf('pic2') !== -1) {
     $( '.project.pic2' ).removeClass( 'hide-content' );
+    currentPage = 2;
   }
   else if (classString.indexOf('pic3') !== -1) {
     $( '.project.pic3' ).removeClass( 'hide-content' );
+    currentPage = 3;
   }
 }
 
@@ -87,7 +92,6 @@ $( '.page-link' ).click(function(event) {
   event.preventDefault();
   setPage($( this ));
 });
-
 
 $( '.site-title' ).click(function(event) {
   event.preventDefault();
@@ -105,20 +109,34 @@ $( '.project-image-wrapper' ).hover(
 
 $( '.project-image' ).click(
   function(event) {
-    setPages(this);
+    setNewPages(this);
   }
 )
 
 $( '.project-unit-title' ).click(
   function(event) {
-    setPages(this);
-    // $( '.project-display' ).addClass( 'hide-content' );
+    setNewPages(this);
   }
 )
 
 $( '.project-paragraph-wrapper' ).click(
   function(event) {
-    setPages(this);
-    // $( '.project-display' ).addClass( 'hide-content' );
+    setNewPages(this);
+  }
+)
+
+$( '.fa.fa-arrow-left' ).click(
+  function(event) {
+    if (currentPage !== 0) {
+      setNewPages(this);
+    }
+  }
+)
+
+$( '.fa.fa-arrow-right' ).click(
+  function(event) {
+    if (currentPage !== 3) {
+      setNewPages(this);
+    }
   }
 )
