@@ -578,6 +578,19 @@ strong {
   justify-content: space-between;
 }
 
+button {
+  background-color: orange;
+  border-bottom: 3px solid #eee;
+  color: #fff;
+  font-size: 10pt;
+  margin: 45px auto 0;
+  padding: 8px 30px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+
 @media screen and (min-width: 601px) {
   .narrow-email {
     display: none;
@@ -729,6 +742,11 @@ strong {
 
   .normal-image {
     max-width: 270px;
+  }
+
+  .page-title {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 

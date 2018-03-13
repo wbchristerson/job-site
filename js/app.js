@@ -140,3 +140,10 @@ $( '.fa.fa-arrow-right' ).click(
     }
   }
 )
+
+$( 'button.back-to-projects' ).click(
+  function(event) {
+    clearImages();
+    $( '.project-display' ).removeClass( 'hide-content' );
+  }
+)
