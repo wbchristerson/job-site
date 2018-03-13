@@ -618,6 +618,7 @@ em {
   line-height: 1.5em;
   text-transform: uppercase;
   color: #737373;
+  cursor: pointer;
 }
 
 strong {

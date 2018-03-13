@@ -1,3 +1,17 @@
+let picIndex = {
+  'project-image-wrapper pic0': 0,
+  'project-image-wrapper pic1': 1,
+  'project-image-wrapper pic2': 2,
+  'project-image-wrapper pic3': 3
+}
+
+let titleIndex = {
+  'project-unit-title pic0': 0,
+  'project-unit-title pic1': 1,
+  'project-unit-title pic2': 2,
+  'project-unit-title pic3': 3
+}
+
 $( '.topic-label' ).click(function() {
   let elem = $( this ).parent().children( '.extra-content' ).first();
   let vertBar = $( this ).find( '.vert-plus' );
@@ -26,6 +40,7 @@ function setPage(elem) {
   $( '.page-link' ).removeClass( 'select-border' );
   $( '.footer-git' ).attr('src', 'img/github-icon-small.png');
 
+  clearImages();
   if ((content === 'Projects') || (content === 'Will Christerson')) {
     $( '.project-display' ).removeClass( 'hide-content' );
   }
@@ -42,6 +57,31 @@ function setPage(elem) {
   currTab.addClass( 'select-border' );
 }
 
+function clearImages() {
+  $( '.project.pic0' ).addClass( 'hide-content' );
+  $( '.project.pic1' ).addClass( 'hide-content' );
+  $( '.project.pic2' ).addClass( 'hide-content' );
+  $( '.project.pic3' ).addClass( 'hide-content' );
+}
+
+function setPages(context) {
+  clearImages();
+  $( '.project-display' ).addClass( 'hide-content' );
+  let classString = $( context ).attr( 'class' );
+  console.log('Class String: ' + classString);
+  if (classString.indexOf('pic0') !== -1) {
+    $( '.project.pic0' ).removeClass( 'hide-content' );
+  }
+  else if (classString.indexOf('pic1') !== -1) {
+    $( '.project.pic1' ).removeClass( 'hide-content' );
+  }
+  else if (classString.indexOf('pic2') !== -1) {
+    $( '.project.pic2' ).removeClass( 'hide-content' );
+  }
+  else if (classString.indexOf('pic3') !== -1) {
+    $( '.project.pic3' ).removeClass( 'hide-content' );
+  }
+}
 
 $( '.page-link' ).click(function(event) {
   event.preventDefault();
@@ -65,6 +105,20 @@ $( '.project-image-wrapper' ).hover(
 
 $( '.project-image' ).click(
   function(event) {
-    $( '.project-display' ).addClass( 'hide-content' );
+    setPages(this);
+  }
+)
+
+$( '.project-unit-title' ).click(
+  function(event) {
+    setPages(this);
+    // $( '.project-display' ).addClass( 'hide-content' );
+  }
+)
+
+$( '.project-paragraph-wrapper' ).click(
+  function(event) {
+    setPages(this);
+    // $( '.project-display' ).addClass( 'hide-content' );
   }
 )
