@@ -17,7 +17,8 @@ function setPage(elem) {
   let currTab = $( '.trigger' ).children().first();
   $( 'body' ).css('background', '#ffffff')
 
-  $( '.projects-page' ).addClass( 'hide-content' );
+  // $( '.projects-page' ).addClass( 'hide-content' );
+  $( '.project-display' ).addClass( 'hide-content' );
   $( '.about' ).addClass( 'hide-content' );
   $( '.contact' ).addClass( 'hide-content' );
 
@@ -25,11 +26,11 @@ function setPage(elem) {
   $( '.page-link' ).removeClass( 'select-border' );
   $( '.footer-git' ).attr('src', 'img/github-icon-small.png');
 
-  if (content === 'Home') {
-    $( '.about' ).removeClass( 'hide-content' );
+  if ((content === 'Projects') || (content === 'Will Christerson')) {
+    $( '.project-display' ).removeClass( 'hide-content' );
   }
-  else if ((content === 'Projects') || (content === 'Will Christerson')) {
-    $( '.projects-page' ).removeClass( 'hide-content' );
+  else if (content === 'About') {
+    $( '.about' ).removeClass( 'hide-content' );
     currTab = currTab.next();
   }
   else if (content === 'Contact') {
@@ -59,5 +60,11 @@ $( '.project-image-wrapper' ).hover(
   },
   function(event) {
     $( this ).children( '.project-paragraph-wrapper' ).addClass( 'hide-content' );
+  }
+)
+
+$( '.project-image' ).click(
+  function(event) {
+    $( '.project-display' ).addClass( 'hide-content' );
   }
 )
