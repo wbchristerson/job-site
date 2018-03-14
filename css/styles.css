@@ -600,6 +600,26 @@ button {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .project-unit {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-unit {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 450px) {
+  .project-unit {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
 @media screen and (max-width: 740px) {
   .site-nav {
     position: absolute;
