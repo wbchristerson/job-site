@@ -594,6 +594,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  box-shadow: 4px 3px #c4d4ed;
+}
+
 @media screen and (min-width: 601px) {
   .narrow-email {
     display: none;
