@@ -241,6 +241,7 @@ a:hover {
 .extra-content {
   font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
+  letter-spacing: 1px;
 }
 
 .hide-content {
