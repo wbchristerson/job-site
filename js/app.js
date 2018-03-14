@@ -1,19 +1,5 @@
 let currentPage = -1;
 
-let picIndex = {
-  'project-image-wrapper pic0': 0,
-  'project-image-wrapper pic1': 1,
-  'project-image-wrapper pic2': 2,
-  'project-image-wrapper pic3': 3
-}
-
-let titleIndex = {
-  'project-unit-title pic0': 0,
-  'project-unit-title pic1': 1,
-  'project-unit-title pic2': 2,
-  'project-unit-title pic3': 3
-}
-
 $( '.topic-label' ).click(function() {
   let elem = $( this ).parent().children( '.extra-content' ).first();
   let vertBar = $( this ).find( '.vert-plus' );
