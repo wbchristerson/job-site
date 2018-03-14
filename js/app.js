@@ -38,7 +38,7 @@ function setPage(elem) {
   }
   else if (content === 'Contact') {
     $( '.contact' ).removeClass( 'hide-content' );
-    $( 'body' ).css('background', 'linear-gradient(160deg, #66afdd 0%, #dddb66 100%)');
+    // $( 'body' ).css('background', 'linear-gradient(160deg, #66afdd 0%, #dddb66 100%)');
     $( '.footer-git' ).attr('src', 'img/github-icon-small-yellow.png');
     currTab = currTab.next().next();
   }

@@ -598,6 +598,10 @@ button:hover {
   box-shadow: 4px 3px #c4d4ed;
 }
 
+.contact-list li {
+  font-size: 35px;
+}
+
 @media screen and (min-width: 601px) {
   .narrow-email {
     display: none;
