@@ -24,8 +24,8 @@
         </a>
 
         <div class="trigger">
-          <a class="page-link select-border" href="https://wbchristerson.github.io/">Home</a>
-          <a class="page-link" href="https://wbchristerson.github.io/">Projects</a>
+          <a class="page-link select-border" href="https://wbchristerson.github.io/">Projects</a>
+          <a class="page-link" href="https://wbchristerson.github.io/">About</a>
           <a class="page-link" href="https://wbchristerson.github.io/">Contact</a>
         </div>
       </nav>
@@ -35,11 +35,74 @@
   </header>
 
 
+  <section class="project-display">
+    <div class="project-container">
+      <div class="project-unit">
+        <div class="project-image-wrapper">
+          <img class="project-image pale-edge pic0" src="img/database-home.png" alt="A sample image of the database main menu.">
+          <div class="project-paragraph-wrapper hide-content pic0">
+            <p>
+              <strong>A small-scale interactive database storing solutions to challenging mathematical puzzles and problems drawn from various sources.</strong>
+              <br>
+              Python
+            </p>
+          </div>
+        </div>
+        <p class="project-unit-title pic0">Mathematical Database</p>
+      </div>
+      <div class="project-unit">
+        <div class="project-image-wrapper">
+          <img class="project-image pic1" src="img/general-game.png" alt="A sample image of the game screen during use.">
+          <div class="project-paragraph-wrapper hide-content pic1">
+            <p>
+              <strong>A re-creation of the classic arcade game Frogger.</strong>
+              <br>
+              JavaScript &#9900; HTML &#9900; CSS
+            </p>
+          </div>
+        </div>
+        <p class="project-unit-title pic1">Frogger</p>
+      </div>
+      <div class="project-unit">
+        <div class="project-image-wrapper">
+          <img class="project-image pale-edge pic2" src="img/display.png" alt="A sample image of the matching game during use.">
+          <div class="project-paragraph-wrapper hide-content pic2">
+            <p>
+              <strong>A memory challenge for users to match hidden cards in a timed setting.</strong>
+              <br>
+              JavaScript (jQuery) &#9900; HTML &#9900; CSS
+            </p>
+          </div>
+        </div>
+        <p class="project-unit-title pic2">Matching Game</p>
+      </div>
+      <div class="project-unit">
+        <div class="project-image-wrapper">
+          <img class="project-image pale-edge pic3" src="img/canvas-example.png" alt="A sample creation using this application.">
+          <div class="project-paragraph-wrapper hide-content pic3">
+            <p>
+              <strong>An application to make colorful pixel images of varying grid sizes using an extensive color palette.</strong>
+              <br>
+              JavaScript (jQuery) &#9900; HTML &#9900; CSS
+            </p>
+          </div>
+        </div>
+        <p class="project-unit-title pic3">Pixel Art Maker</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="projects-page hide-content">
 
-    <div class="project">
-      <span class="project-text project-title">Mathematical Database</span>
+  <div class="projects-page">
+
+    <div class="project pic0 hide-content">
+      <div class="project-text page-title">
+        <i class="fa fa-arrow-left end-arrow"></i>
+        <div class="project-title">
+          Mathematical Database
+        </div>
+        <i class="fa fa-arrow-right pic1 middle-arrow"></i>
+      </div>
       <img class="added-image normal-image pale-edge" src="img/database-home.png" alt="A sample image of the database main menu.">
       <h3 class="project-text description">
         This project is a small-scale database that uses Python and the
@@ -369,17 +432,28 @@
         </h3>
 
       </div>
+
+      <button class="back-to-projects">
+        Return To Projects Page
+      </button>
     </div>
 
 
 
-    <div class="border">
+    <div class="border hide-content">
     </div>
 
 
 
-    <div class="project">
-      <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/arcade-game/" target="_blank">Frogger</a></span>
+    <div class="project pic1 hide-content">
+      <div class="project-text page-title">
+        <i class="fa fa-arrow-left pic0 middle-arrow"></i>
+        <div class="project-title">
+          <a class="link-title" href="https://wbchristerson.github.io/arcade-game/" target="_blank">Frogger</a>
+        </div>
+        <i class="fa fa-arrow-right pic2 middle-arrow"></i>
+      </div>
+      <!-- <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/arcade-game/" target="_blank">Frogger</a></span> -->
       <img class="added-image normal-image" src="img/general-game.png" alt="A sample image of the game screen during use.">
       <h3 class="project-text description">
         This project re-creates the arcade game Frogger using JavaScript and a
@@ -393,7 +467,9 @@
              href="https://github.com/wbchristerson/arcade-game"
              target="_blank">this GitHub page</a>
         (most of the below additional information is provided in a more detailed
-        form in the README.md file at that page).
+        form in the README.md file at that page). Note: This project is based on
+        a skeleton structure from Udacity. For more information, see
+        the initial commit on the appropriate GitHub page given above.
       </h3>
       <div class="details">
         <h3 class="project-text sub-section">
@@ -409,10 +485,7 @@
               Structure
             </div>
 
-          <!-- </button> -->
-
           </div>
-
 
           <div class="extra-content hide-content">
             <ul>
@@ -527,12 +600,6 @@
                  using this terminal command:
             </p>
 
-            <!-- <pre>
-              <code>
-                git clone https://github.com/wbchristerson/arcade-game.git
-              </code>
-            </pre> -->
-
             <code class="display-code">
               <div class="clone-command">
                 git clone https://github.com/wbchristerson/arcade-game.git
@@ -563,19 +630,28 @@
         </h3>
 
       </div>
+
+      <button class="back-to-projects">
+        Return To Projects Page
+      </button>
     </div>
 
 
 
-
-    <div class="border">
+    <div class="border hide-content">
     </div>
 
 
 
-
-    <div class="project">
-      <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/memory-game/" target="_blank">Matching Game</a></span>
+    <div class="project pic2 hide-content">
+      <div class="project-text page-title">
+        <i class="fa fa-arrow-left pic1 middle-arrow"></i>
+        <div class="project-title">
+          <a class="link-title" href="https://wbchristerson.github.io/memory-game/" target="_blank">Matching Game</a>
+        </div>
+        <i class="fa fa-arrow-right pic3 middle-arrow"></i>
+      </div>
+      <!-- <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/memory-game/" target="_blank">Matching Game</a></span> -->
       <img class="added-image normal-image pale-edge" src="img/display.png" alt="A sample image of the matching game during use.">
       <h3 class="project-text description">
         Using HTML, CSS, and JavaScript, this two-page application challenges
@@ -592,7 +668,9 @@
              target="_blank">
             this GitHub page</a>
         (most of the below additional information is available in the
-        README.md file at that page).
+        README.md file at that page). Note: This project is based on
+        a skeleton structure from Udacity. For more information, see
+        the initial commit on the appropriate GitHub page given above.
       </h3>
       <div class="details">
         <h3 class="project-text sub-section">
@@ -715,23 +793,28 @@
         </h3>
 
       </div>
+
+      <button class="back-to-projects">
+        Return To Projects Page
+      </button>
     </div>
 
 
 
-
-    <div class="border">
+    <div class="border hide-content">
     </div>
 
 
 
-
-
-
-
-
-    <div class="project">
-      <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/pixel-art/" target="_blank">Pixel Art Maker</a></span>
+    <div class="project pic3 hide-content">
+      <div class="project-text page-title">
+        <i class="fa fa-arrow-left pic2 middle-arrow"></i>
+        <div class="project-title">
+          <a class="link-title" href="https://wbchristerson.github.io/pixel-art/" target="_blank">Pixel Art Maker</a>
+        </div>
+        <i class="fa fa-arrow-right end-arrow"></i>
+      </div>
+      <!-- <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/pixel-art/" target="_blank">Pixel Art Maker</a></span> -->
       <img class="added-image normal-image pale-edge" src="img/canvas-example.png" alt="A sample creation using this application.">
       <h3 class="project-text description">
         This project is a one-page application to make colorful pixel images of
@@ -747,7 +830,9 @@
              target="_blank">
             this GitHub page</a>
         (most of the below additional information is provided in a more detailed
-        form in the README.md file at that page).
+        form in the README.md file at that page). Note: This project is based on
+        a skeleton structure from Udacity. For more information, see
+        the initial commit on the appropriate GitHub page given above.
       </h3>
       <div class="details">
         <h3 class="project-text sub-section">
@@ -893,17 +978,21 @@
         </h3>
 
       </div>
+
+      <button class="back-to-projects">
+        Return To Projects Page
+      </button>
     </div>
 
 
 
 
-    <div class="border">
+    <div class="border hide-content">
     </div>
 
 
 
-    <h3 class="project-text description">
+    <h3 class="project-text description hide-content">
       Note: The projects "Frogger", "Matching Game", and "Pixel Art Maker" are
       all based on skeleton structures from Udacity. For more information, see
       the initial commit on the appropriate GitHub page given above.
@@ -918,28 +1007,41 @@
 
 
 
-  <div class="about">
-    <h1 class="statement about-text about-greeting">Welcome!</h1>
+  <div class="about hide-content">
+    <!-- <h1 class="statement about-text about-greeting">Welcome!</h1> -->
 
     <div class="statement about-text description">
-      This website showcases some projects that I have created in
+      Hello! This website showcases some projects that I have created in
       various programming languages.
     </div>
 
     <div class="statement about-text description">
       In May 2017, I graduated from Carnegie Mellon University with a Bachelor
-      of Science in Mathematics. I am interested in discrete math and computer
-      science, particularly algorithms. I am a native New Yorker and wish to
-      enter a career in either computer science or finance. To contact me,
-      please email me at <em>wbchristerson AT gmail DOT com</em>.
-      I also have a GitHub account under
-      <a class="inner-link" href="https://github.com/wbchristerson"
-         target="_blank">wbchristerson</a>.
+      of Science in Mathematics. I am a native New Yorker and wish to enter a
+      career in either computer science or finance. I am interested in discrete
+      math and computer science, particularly algorithms, and have a strong
+      background in mathematical problem solving and analysis.
     </div>
 
     <div class="statement about-text description">
-      For projects, see the "Projects" section above.
+      As for projects, I am currently developing a small finance/stock market
+      Android application using Java with Android Studio to implement a
+      multi-page layout, potentially using Web APIs for freely available data.
     </div>
+
+    <div class="statement about-text description">
+      For my resume, please email me (see my contacts page).
+
+      <!-- To contact me,
+      please email me at <em>wbchristerson AT gmail DOT com</em>.
+      I also have a GitHub account under
+      <a class="inner-link" href="https://github.com/wbchristerson"
+         target="_blank">wbchristerson</a>. -->
+    </div>
+
+    <!-- <div class="statement about-text description">
+      For projects, see the "Projects" section above.
+    </div> -->
   </div>
 
 
@@ -954,11 +1056,13 @@
       <ul class="contact-list">
         <li>
           <i class="fa fa-envelope-o"></i>
-          Email: wbchristerson AT gmail DOT com
+          Email: <img class="email-image" src="img/email-image.png" alt="My email">
+          <img class="email-image-small" src="img/email-image-small.png" alt="My email">
         </li>
 
         <li>
-          <img src="img/github-icon-blue.png" alt="GitHub Icon">
+          <i class="fa fa-github"></i>
+          <!-- <img src="img/github-icon-blue.png" alt="GitHub Icon"> -->
           GitHub:
           <a class="contact-link"
              href="https://github.com/wbchristerson"
@@ -968,7 +1072,8 @@
         </li>
 
         <li>
-          <img src="img/linkedin-logo-big.png" alt="LinkedIn Icon">
+          <i class="fa fa-linkedin"></i>
+          <!-- <img src="img/linkedin-logo-big.png" alt="LinkedIn Icon"> -->
           LinkedIn:
           <a class="contact-link"
              href="https://www.linkedin.com/in/william-christerson-a0354b156/"
@@ -983,25 +1088,18 @@
 
 
 
-
-
   <div class="spacer">
   </div>
 
 
 
-
-
-
-
-
   <footer class="site-footer">
     <div class="wrapper">
-      <h2 class="footer-heading site-end">
-        Will Christerson
+      <h2 class="footer-heading site-end center-footer">
+        &copy; 2018 Will Christerson
       </h2>
 
-      <div class="content-wrapper">
+      <!-- <div class="content-wrapper">
 
         <div class="flex-item first-item">
           <ul class="contact-list">
@@ -1020,8 +1118,6 @@
           </ul>
         </div>
 
-        <!-- https://seeklogo.com/vector-logo/268072/linkedin-icon# -->
-
         <div class="flex-item second-item">
           <p>
             This site displays some small projects that I have created in
@@ -1031,7 +1127,7 @@
           </p>
         </div>
 
-      </div>
+      </div> -->
     </div>
 
   </footer>
