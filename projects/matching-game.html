@@ -1,164 +1,207 @@
-<div class="projects-page">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A Beginner Portfolio Site">
+  <meta name="author" content="Aloysius">
+  <title>Will Christerson</title>
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
 
-  <div class="project pic2 hide-content">
-    <div class="project-text page-title">
-      <i class="fa fa-arrow-left pic1 middle-arrow"></i>
-      <div class="project-title">
-        <a class="link-title" href="https://wbchristerson.github.io/memory-game/" target="_blank">Matching Game</a>
+<body>
+
+  <header class="site-header">
+    <div class="wrapper clearfix">
+      <a class="site-title"
+         href="../index.html">Will Christerson</a>
+
+      <nav class="site-nav">
+        <a href="#" class="menu-icon">
+          <i class="fa fa-reorder"></i>
+        </a>
+
+        <div class="trigger">
+          <a class="page-link select-border" href="https://wbchristerson.github.io/">Projects</a>
+          <a class="page-link" href="https://wbchristerson.github.io/">About</a>
+          <a class="page-link" href="https://wbchristerson.github.io/">Contact</a>
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <div class="projects-page">
+
+    <div class="project pic2">
+      <div class="project-text page-title">
+        <i class="fa fa-arrow-left pic1 middle-arrow"></i>
+        <div class="project-title">
+          <a class="link-title" href="https://wbchristerson.github.io/memory-game/" target="_blank">Matching Game</a>
+        </div>
+        <i class="fa fa-arrow-right pic3 middle-arrow"></i>
       </div>
-      <i class="fa fa-arrow-right pic3 middle-arrow"></i>
-    </div>
-    <!-- <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/memory-game/" target="_blank">Matching Game</a></span> -->
-    <img class="added-image normal-image pale-edge" src="img/display.png" alt="A sample image of the matching game during use.">
-    <h3 class="project-text description">
-      Using HTML, CSS, and JavaScript, this two-page application challenges
-      the player to find all matching pairs of cards in the fewest moves. To
-      try the game, click
-        <a class="inner-link"
-           href="https://wbchristerson.github.io/memory-game/"
-           target="_blank">
-           here</a>.
-      To learn more about its structure, design, and how to
-      download, see below. For full documentation, see
-        <a class="inner-link"
-           href="https://github.com/wbchristerson/memory-game"
-           target="_blank">
-          this GitHub page</a>
-      (most of the below additional information is available in the
-      README.md file at that page). Note: This project is based on
-      a skeleton structure from Udacity. For more information, see
-      the initial commit on the appropriate GitHub page given above.
-    </h3>
-    <div class="details">
-      <h3 class="project-text sub-section">
-        <div class="topic-label">
-
-          <svg class="cross" width="30" height="30">
-            <rect x="0" y="10" width="21" height="5" />
-            <rect class="vert-plus" x="8" y="3" width="5" height="20" />
-          </svg>
-
-          <div class="name-structure">
-            Structure
-          </div>
-        </div>
-
-        <div class="extra-content hide-content">
-          <ul>
-            <li>You must find the 8 matching images from cards that are turned
-              over.</li>
-            <li>When you click a card, it flips, turns blue, and the hidden
-              image appears.</li>
-            <li>When you make a match, the cards change color and the images
-              remain visible.</li>
-            <li>If you do not make a match, the cards flip back over to their
-              original display.</li>
-            <li>Once you match all cards, the game is over and the screen
-              congratulates you, listing various statistics about your game.
-              To play again, click the "play again" button.</li>
-          </ul>
-        </div>
+      <!-- <span class="project-text project-title"><a class="link-title" href="https://wbchristerson.github.io/memory-game/" target="_blank">Matching Game</a></span> -->
+      <img class="added-image normal-image pale-edge" src="../img/display.png" alt="A sample image of the matching game during use.">
+      <h3 class="project-text description">
+        Using HTML, CSS, and JavaScript, this two-page application challenges
+        the player to find all matching pairs of cards in the fewest moves. To
+        try the game, click
+          <a class="inner-link"
+             href="https://wbchristerson.github.io/memory-game/"
+             target="_blank">
+             here</a>.
+        To learn more about its structure, design, and how to
+        download, see below. For full documentation, see
+          <a class="inner-link"
+             href="https://github.com/wbchristerson/memory-game"
+             target="_blank">
+            this GitHub page</a>
+        (most of the below additional information is available in the
+        README.md file at that page). Note: This project is based on
+        a skeleton structure from Udacity. For more information, see
+        the initial commit on the appropriate GitHub page given above.
       </h3>
+      <div class="details">
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
 
-      <h3 class="project-text sub-section">
-        <div class="topic-label">
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
 
-          <svg class="cross" width="30" height="30">
-            <rect x="0" y="10" width="21" height="5" />
-            <rect class="vert-plus" x="8" y="3" width="5" height="20" />
-          </svg>
-
-          <div class="name-design">
-            Design
-          </div>
-
-        </div>
-
-        <div class="extra-content hide-content">
-          <p>
-            The main screen includes a timer, a move counter, a reset button,
-            and a star rating. Below is an example of the interface:
-          </p>
-
-          <img class="added-image normal-image pale-edge" src="img/memory-game-page.png"
-               alt="A screenshot of the game's introductory page">
-
-          <p>
-            Finishing with at most 15 moves yields a 3-star rating,
-            finishing with more than 16 moves but at most 25 yields a 2-star
-            rating, and finishing with more than 25 moves yields a 1-star
-            rating. Here is an example end page:
-          </p>
-
-          <img class="normal-image special-margin" src="img/memory-end-page.png"
-               alt="A screenshot of the game's end page">
-        </div>
-
-      </h3>
-
-
-      <h3 class="project-text sub-section">
-        <div class="topic-label">
-
-          <svg class="cross" width="30" height="30">
-            <rect x="0" y="10" width="21" height="5" />
-            <rect class="vert-plus" x="8" y="3" width="5" height="20" />
-          </svg>
-
-          <div class="name-running">
-            Running The Application
-          </div>
-
-        </div>
-
-        <div class="extra-content hide-content">
-          <p>
-            Run the application in your browser by clicking
-            <a class="inner-link"
-               href="https://wbchristerson.github.io/memory-game/"
-               target="_blank">here</a>. To download, clone the repository
-            using this terminal command:
-          </p>
-
-          <code class="display-code">
-            <div class="clone-command">
-              git clone https://github.com/wbchristerson/memory-game.git
+            <div class="name-structure">
+              Structure
             </div>
-          </code>
+          </div>
 
-          <p>
-            Alternatively, follow the instructions below to download to a hard drive:
-          </p>
+          <div class="extra-content hide-content">
+            <ul>
+              <li>You must find the 8 matching images from cards that are turned
+                over.</li>
+              <li>When you click a card, it flips, turns blue, and the hidden
+                image appears.</li>
+              <li>When you make a match, the cards change color and the images
+                remain visible.</li>
+              <li>If you do not make a match, the cards flip back over to their
+                original display.</li>
+              <li>Once you match all cards, the game is over and the screen
+                congratulates you, listing various statistics about your game.
+                To play again, click the "play again" button.</li>
+            </ul>
+          </div>
+        </h3>
 
-          <ul>
-            <li>Navigate to
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-design">
+              Design
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              The main screen includes a timer, a move counter, a reset button,
+              and a star rating. Below is an example of the interface:
+            </p>
+
+            <img class="added-image normal-image pale-edge" src="../img/memory-game-page.png"
+                 alt="A screenshot of the game's introductory page">
+
+            <p>
+              Finishing with at most 15 moves yields a 3-star rating,
+              finishing with more than 16 moves but at most 25 yields a 2-star
+              rating, and finishing with more than 25 moves yields a 1-star
+              rating. Here is an example end page:
+            </p>
+
+            <img class="normal-image special-margin" src="../img/memory-end-page.png"
+                 alt="A screenshot of the game's end page">
+          </div>
+
+        </h3>
+
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-running">
+              Running The Application
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              Run the application in your browser by clicking
               <a class="inner-link"
-                 href="https://github.com/wbchristerson/memory-game"
-                 target="_blank">
-                 this</a>
-                page.
-            </li>
-            <li>Click the green "Clone or download" button towards the right then choose "Download ZIP".</li>
-            <li>Find the folder <code>memory-game-master</code> in your Downloads folder or wherever it was placed on your device.</li>
-            <li>Right click and choose "Extract All" then extract.</li>
-            <li>Open your browser and use <code>Ctrl + O</code> (for Windows machines) to open the file selector on your device.</li>
-            <li>Go to <code>memory-game-master</code>, enter <code>memory-game-master</code> again, then select <code>index.html</code>. The game screen will appear.</li>
-          </ul>
+                 href="https://wbchristerson.github.io/memory-game/"
+                 target="_blank">here</a>. To download, clone the repository
+              using this terminal command:
+            </p>
+
+            <code class="display-code">
+              <div class="clone-command">
+                git clone https://github.com/wbchristerson/memory-game.git
+              </div>
+            </code>
+
+            <p>
+              Alternatively, follow the instructions below to download to a hard drive:
+            </p>
+
+            <ul>
+              <li>Navigate to
+                <a class="inner-link"
+                   href="https://github.com/wbchristerson/memory-game"
+                   target="_blank">
+                   this</a>
+                  page.
+              </li>
+              <li>Click the green "Clone or download" button towards the right then choose "Download ZIP".</li>
+              <li>Find the folder <code>memory-game-master</code> in your Downloads folder or wherever it was placed on your device.</li>
+              <li>Right click and choose "Extract All" then extract.</li>
+              <li>Open your browser and use <code>Ctrl + O</code> (for Windows machines) to open the file selector on your device.</li>
+              <li>Go to <code>memory-game-master</code>, enter <code>memory-game-master</code> again, then select <code>index.html</code>. The game screen will appear.</li>
+            </ul>
 
 
-        </div>
-      </h3>
+          </div>
+        </h3>
 
+      </div>
+
+      <button class="back-to-projects">
+        Return To Projects Page
+      </button>
     </div>
 
-    <button class="back-to-projects">
-      Return To Projects Page
-    </button>
+    <div class="border">
+    </div>
+
   </div>
 
-
-
-  <div class="border hide-content">
-  </div>
-
-</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
