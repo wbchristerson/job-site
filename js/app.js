@@ -74,15 +74,15 @@ function setNewPages(context) {
   }
 }
 
-$( '.page-link' ).click(function(event) {
-  event.preventDefault();
-  setPage($( this ));
-});
+// $( '.page-link' ).click(function(event) {
+//   event.preventDefault();
+//   setPage($( this ));
+// });
 
-$( '.site-title' ).click(function(event) {
-  event.preventDefault();
-  setPage($( this ));
-})
+// $( '.site-title' ).click(function(event) {
+//   event.preventDefault();
+//   setPage($( this ));
+// })
 
 $( '.project-image-wrapper' ).hover(
   function(event) {
@@ -93,43 +93,43 @@ $( '.project-image-wrapper' ).hover(
   }
 )
 
-$( '.project-image' ).click(
-  function(event) {
-    setNewPages(this);
-  }
-)
+// $( '.project-image' ).click(
+//   function(event) {
+//     setNewPages(this);
+//   }
+// )
 
-$( '.project-unit-title' ).click(
-  function(event) {
-    setNewPages(this);
-  }
-)
+// $( '.project-unit-title' ).click(
+//   function(event) {
+//     setNewPages(this);
+//   }
+// )
 
-$( '.project-paragraph-wrapper' ).click(
-  function(event) {
-    setNewPages(this);
-  }
-)
+// $( '.project-paragraph-wrapper' ).click(
+//   function(event) {
+//     setNewPages(this);
+//   }
+// )
 
-$( '.fa.fa-arrow-left' ).click(
-  function(event) {
-    if (currentPage !== 0) {
-      setNewPages(this);
-    }
-  }
-)
+// $( '.fa.fa-arrow-left' ).click(
+//   function(event) {
+//     if (currentPage !== 0) {
+//       setNewPages(this);
+//     }
+//   }
+// )
 
-$( '.fa.fa-arrow-right' ).click(
-  function(event) {
-    if (currentPage !== 3) {
-      setNewPages(this);
-    }
-  }
-)
+// $( '.fa.fa-arrow-right' ).click(
+//   function(event) {
+//     if (currentPage !== 3) {
+//       setNewPages(this);
+//     }
+//   }
+// )
 
-$( 'button.back-to-projects' ).click(
-  function(event) {
-    clearImages();
-    $( '.project-display' ).removeClass( 'hide-content' );
-  }
-)
+// $( 'button.back-to-projects' ).click(
+//   function(event) {
+//     clearImages();
+//     $( '.project-display' ).removeClass( 'hide-content' );
+//   }
+// )
