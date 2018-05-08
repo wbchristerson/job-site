@@ -519,34 +519,20 @@ strong {
   cursor: pointer;
 }
 
+.middle-arrow {
+  color: blue;
+  font-size: 1.5em;
+}
+
 .middle-arrow:hover {
   text-decoration: none;
   color: red;
 }
 
-/* .end-arrow {
-  color: #d3dae5;
-  cursor: default;
-} */
-
 .page-title {
   display: flex;
   justify-content: space-between;
 }
-
-/* button {
-  background-color: orange;
-  border-bottom: 3px solid #eee;
-  color: #fff;
-  font-size: 10pt;
-  margin: 45px auto 0;
-  padding: 8px 30px 10px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  cursor: pointer;
-} */
 
 button:hover {
   box-shadow: 4px 3px #c4d4ed;
@@ -569,7 +555,6 @@ a.button {
   appearance: button;
   width: 10%;
   background-color: orange;
-  /* border-bottom: 3px solid #eee; */
   color: #fff;
   margin: 45px auto 0;
   padding: 8px 30px 10px;
@@ -600,6 +585,10 @@ a.button:hover {
   .project-unit {
     width: 100%;
     margin-bottom: 25px;
+  }
+
+  a.button {
+    width: 60%;
   }
 }
 
@@ -713,6 +702,7 @@ a.button:hover {
   .about {
     margin-right: 0;
     margin-left: 0;
+   margin-bottom: 80px;
   }
 
   .about-text {
