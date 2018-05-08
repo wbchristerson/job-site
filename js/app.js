@@ -14,36 +14,36 @@ $( '.topic-label' ).click(function() {
   }
 });
 
-function setPage(elem) {
-  let content = elem.text();
-  let currTab = $( '.trigger' ).children().first();
-  $( 'body' ).css('background', '#ffffff')
-
-  // $( '.projects-page' ).addClass( 'hide-content' );
-  $( '.project-display' ).addClass( 'hide-content' );
-  $( '.about' ).addClass( 'hide-content' );
-  $( '.contact' ).addClass( 'hide-content' );
-
-  // remove the border around whichever of "home", "projects", "content" is covered
-  $( '.page-link' ).removeClass( 'select-border' );
-  $( '.footer-git' ).attr('src', 'img/github-icon-small.png');
-
-  clearImages();
-  if ((content === 'Projects') || (content === 'Will Christerson')) {
-    $( '.project-display' ).removeClass( 'hide-content' );
-  }
-  else if (content === 'About') {
-    $( '.about' ).removeClass( 'hide-content' );
-    currTab = currTab.next();
-  }
-  else if (content === 'Contact') {
-    $( '.contact' ).removeClass( 'hide-content' );
-    // $( 'body' ).css('background', 'linear-gradient(160deg, #66afdd 0%, #dddb66 100%)');
-    $( '.footer-git' ).attr('src', 'img/github-icon-small-yellow.png');
-    currTab = currTab.next().next();
-  }
-  currTab.addClass( 'select-border' );
-}
+// function setPage(elem) {
+//   let content = elem.text();
+//   let currTab = $( '.trigger' ).children().first();
+//   $( 'body' ).css('background', '#ffffff')
+//
+//   // $( '.projects-page' ).addClass( 'hide-content' );
+//   $( '.project-display' ).addClass( 'hide-content' );
+//   $( '.about' ).addClass( 'hide-content' );
+//   $( '.contact' ).addClass( 'hide-content' );
+//
+//   // remove the border around whichever of "home", "projects", "content" is covered
+//   $( '.page-link' ).removeClass( 'select-border' );
+//   $( '.footer-git' ).attr('src', 'img/github-icon-small.png');
+//
+//   clearImages();
+//   if ((content === 'Projects') || (content === 'Will Christerson')) {
+//     $( '.project-display' ).removeClass( 'hide-content' );
+//   }
+//   else if (content === 'About') {
+//     $( '.about' ).removeClass( 'hide-content' );
+//     currTab = currTab.next();
+//   }
+//   else if (content === 'Contact') {
+//     $( '.contact' ).removeClass( 'hide-content' );
+//     // $( 'body' ).css('background', 'linear-gradient(160deg, #66afdd 0%, #dddb66 100%)');
+//     $( '.footer-git' ).attr('src', 'img/github-icon-small-yellow.png');
+//     currTab = currTab.next().next();
+//   }
+//   currTab.addClass( 'select-border' );
+// }
 
 function clearImages() {
   $( '.project.pic0' ).addClass( 'hide-content' );
