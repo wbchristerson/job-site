@@ -533,7 +533,7 @@ strong {
   justify-content: space-between;
 }
 
-button {
+/* button {
   background-color: orange;
   border-bottom: 3px solid #eee;
   color: #fff;
@@ -545,7 +545,7 @@ button {
   text-transform: uppercase;
   display: block;
   cursor: pointer;
-}
+} */
 
 button:hover {
   box-shadow: 4px 3px #c4d4ed;
@@ -564,9 +564,23 @@ button:hover {
 }
 
 a.button {
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
   appearance: button;
+  width: 10%;
+  background-color: orange;
+  /* border-bottom: 3px solid #eee; */
+  color: #fff;
+  margin: 45px auto 0;
+  padding: 8px 30px 10px;
+  text-align: center;
   text-decoration: none;
-  /* color: initial; */
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+}
+
+a.button:hover {
+  box-shadow: 2px 2px #162133;
 }
 
 @media screen and (min-width: 601px) {
