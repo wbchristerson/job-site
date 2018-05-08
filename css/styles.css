@@ -569,6 +569,13 @@ a.button:hover {
   box-shadow: 2px 2px #162133;
 }
 
+.github-site {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 @media screen and (min-width: 601px) {
   .narrow-email {
     display: none;
@@ -579,12 +586,20 @@ a.button:hover {
   .project-unit {
     width: 40%;
   }
+
+  a.button {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .project-unit {
     width: 100%;
     margin-bottom: 25px;
+  }
+
+  .github-site {
+    overflow-wrap: break-word;
   }
 
   a.button {
