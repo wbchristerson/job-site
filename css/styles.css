@@ -520,13 +520,14 @@ strong {
 }
 
 .middle-arrow:hover {
+  text-decoration: none;
   color: red;
 }
 
-.end-arrow {
+/* .end-arrow {
   color: #d3dae5;
   cursor: default;
-}
+} */
 
 .page-title {
   display: flex;
