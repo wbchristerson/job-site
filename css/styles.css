@@ -476,6 +476,14 @@ em {
   cursor: pointer;
 }
 
+.short-project-image {
+  height: 300px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
 .long-project-image {
   height: 350px;
   width: 60%;
