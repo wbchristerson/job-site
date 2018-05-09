@@ -476,6 +476,15 @@ em {
   cursor: pointer;
 }
 
+.long-project-image {
+  height: 350px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  cursor: pointer;
+}
+
+
 .project-paragraph-wrapper {
   position: absolute;
   bottom: 0;
