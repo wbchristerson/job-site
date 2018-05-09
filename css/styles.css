@@ -134,6 +134,11 @@ a:hover {
   width: 320px;
 }
 
+.long-image {
+  display: block;
+  height: 450px;
+}
+
 .pair-container {
   text-align: justify;
 }
