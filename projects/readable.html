@@ -55,7 +55,12 @@
         </a>
       </div>
       <h3 class="project-text description">
-        Blah
+        This project is a forum (content/comment) application in which users may
+        post content to predefined categories, comment on their posts and other
+        users' posts, and vote on posts and comments. The backend server for
+        storing information was provided by Udacity. I made the rest of the
+        application using <code>create-react-app</code> along with React and
+        Redux.
       </h3>
       <div class="details">
         <h3 class="project-text sub-section">
@@ -73,33 +78,29 @@
 
 
           <div class="extra-content hide-content">
-            <p>Blah</p>
             <ul>
-              <li>Blah</li>
-              <li>Blah</li>
-              <li>Blah
-                  <ul>
-                    <li>topic</li>
-                    <li>key words (tags)</li>
-                    <li>source</li>
-                    <li>date of completion</li>
-                    <li>level of difficulty</li>
-                    <li>problem/puzzle statement (with or without LaTeX formatting)</li>
-                    <li>solution (with or without LaTeX formatting)</li>
-                    <li>additional notes</li>
-                  </ul>
-              </li>
-              <li>"Edit An Entry" alters information about existing data
-                entries. IDs cannot be changed.
-              </li>
+              <li>On all pages of the application there is a navigation bar
+                listing the name of the application as well as the different
+                post categories. Clicking on a post category will lead the user
+                to a page listing all posts of that category.</li>
+              <li>The project opens with a main page listing all currently
+                published posts. There are options at the top of the page for
+                the order of presentation of posts, by date of latest
+                modification as well as by net number of votes. There are also
+                options for composing a new post, with a button that opens a
+                modal for such creation.</li>
+              <li>Clicking on any post takes the user to a page for that
+                particular post, listing its data as well as all additional
+                comments.</li>
+              <li>Each post itself has a sample avatar image, a title, and
+                content. Content is only visible on the specific post page (not
+                in the main list view). In addition, there are options to edit
+                a post as well as to delete it. Selecting editing will open a
+                modal similar to the composition modal. On the far left side of
+                each post there are also buttons for increasing and decreasing
+                the vote count for a particular post.</li>
+              <li>Comments have similar display styles.</li>
             </ul>
-            <p>The project was inspired by
-              this
-              <a class="inner-link"
-              href="https://artofproblemsolving.com/community/u53544h1559064p9530694"
-              target="_blank">post</a>
-              by v_Enhance on the website Art of Problem Solving.
-            </p>
           </div>
         </h3>
 
