@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A Beginner Portfolio Site">
+  <meta name="author" content="Aloysius">
+  <title>Will Christerson</title>
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="wrapper clearfix">
+      <a class="site-title"
+         href="../index.html">Will Christerson</a>
+
+      <nav class="site-nav">
+        <a href="#" class="menu-icon">
+          <i class="fa fa-reorder"></i>
+        </a>
+
+        <div class="trigger">
+          <a class="page-link select-border" href="../index.html">Projects</a>
+          <a class="page-link" href="../about.html">About</a>
+          <a class="page-link" href="../contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="projects-page">
+    <div class="project pic2">
+      <div class="project-text page-title">
+        <a href="pixel-art.html" class="fa fa-arrow-left pic1 middle-arrow"></a>
+        <div class="project-title">
+          <a class="link-title" href="https://github.com/wbchristerson/perfect-matchings" target="_blank">Maximum Matchings</a>
+        </div>
+        <a href="neighborhoodmap.html" class="fa fa-arrow-right pic3 middle-arrow"></a>
+      </div>
+      <img
+        class="added-image normal-image pale-edge"
+        src="../img/maximum-matchings/main-sample.png"
+        alt="A sample image of the matching game during use."
+      >
+      <div class="github-site description">
+        GitHub repository: <a class="inner-link" href="https://github.com/wbchristerson/perfect-matchings" target="_blank">
+          <code>https://github.com/wbchristerson/perfect-matchings</code>
+        </a>
+      </div>
+      <h3 class="project-text description">
+        This application demonstrates an algorithm for finding maximum matchings in bipartite graphs. The general procedure
+        used begins with finding any maximal matching greedily, then expanding the matching using augmenting paths via almost
+        augmenting paths. For a detailed explanation of the concepts involved, see
+        <a class="inner-link"
+          href="https://github.com/wbchristerson/perfect-matchings/blob/master/Maximum_Matchings.pdf"
+          target="_blank">Maximum_Matchings.pdf</a>. The user can choose the bipartite graph in various ways or add edges
+        randomly. There is then a series of selection options for demonstrating the algorithm. This project was created using
+        Python along with the pygame and livewires packages.
+      </h3>
+      <div class="details">
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-structure">
+              Structure
+            </div>
+          </div>
+
+          <div class="extra-content hide-content">
+            <ul>
+              <li>The user may navigate through the various pages to choose the
+                bipartite graph examined.</li>
+              <li>There are options to choose the sizes of the branches as well
+                as which edges appear. Alternatively, edges can be chosen for
+                the user randomly.</li>
+              <li>There are then options for attempting to find a maximum
+                matching manually, as well as for immediately displaying a
+                maximum matching. In addition, the user may watch the
+                application of the algorithm continuously or with steps.</li>
+            </ul>
+          </div>
+        </h3>
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-design">
+              Design
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              Important: To navigate throughout the pages of the program, there
+              are buttons which can be hovered over. To push the buttons you
+              must push the space bar while hovered over, rather than clicking.
+            </p>
+
+            <p>
+              The application begins with a page for selecting the left branch
+              size.
+            </p>
+
+            <img class="added-image normal-image pale-edge"
+              src="../img/maximum-matchings/left-selection.png"
+              alt="Left branch selection view.">
+
+            <p>
+              This is followed by a similar page for selecting the right branch
+              size.
+            </p>
+
+            <img class="added-image normal-image pale-edge"
+              src="../img/maximum-matchings/right-selection.png"
+              alt="Right branch selection view.">
+
+            <p>
+              The user may then elect to choose edges manually or to allow the
+              program to randomly select edges, adding any individual edge using
+              a pseudo-random number generator with probability 40%. Below is a
+              view for making edge selections manually.
+            </p>
+
+            <img class="added-image normal-image pale-edge"
+              src="../img/maximum-matchings/edge-selection.png"
+              alt="Edge selection view.">
+
+            <p>
+              The user is then taken to a page for selecting the type of
+              operation to apply.
+            </p>
+
+            <img class="added-image normal-image pale-edge"
+              src="../img/maximum-matchings/operation-options.png"
+              alt="Operations options view.">
+
+            <p>
+              Upon selecting the manual matching option, the user is allowed to
+              select edges of the graph to try to find a maximum matching.
+              Congratulations are given upon succeeding.
+            </p>
+
+            <img class="added-image normal-image pale-edge"
+              src="../img/maximum-matchings/manual-match.png"
+              alt="Manual matching view.">
+
+            <p>
+              After selecting the automatic matching option, a maximum matching
+              is immediately displayed.
+            </p>
+
+            <img class="added-image normal-image pale-edge"
+              src="../img/maximum-matchings/match-automatic.png"
+              alt="Automatically-generated maximum matching displayed.">
+
+            <p>
+              If the user selects the option to watch the algorithm, the steps
+              of the algorithm will be displayed with changes occurring every
+              few seconds (with a pause button available). The first image below
+              is a still of the initial greedy matching generation and the
+              second image below is a still of the identification of an
+              augmenting path to increase the size of the matching.
+            </p>
+
+            <img class="added-image normal-image pale-edge"
+              src="../img/maximum-matchings/matching-watch-A.png"
+              alt="Greedy matching search view.">
+
+            <img class="added-image normal-image pale-edge"
+              src="../img/maximum-matchings/matching-watch-B.png"
+              alt="Identification of an augmenting path.">
+
+            <p>
+              The fourth option also displays the steps of the algorithm but
+              with buttons to follow the steps.
+            </p>
+          </div>
+
+        </h3>
+
+
+        <h3 class="project-text sub-section">
+          <div class="topic-label">
+
+            <svg class="cross" width="30" height="30">
+              <rect x="0" y="10" width="21" height="5" />
+              <rect class="vert-plus" x="8" y="3" width="5" height="20" />
+            </svg>
+
+            <div class="name-running">
+              Running The Application
+            </div>
+
+          </div>
+
+          <div class="extra-content hide-content">
+            <p>
+              You will need to have Python installed, as well as the
+              <code>pygame</code> and <code>livewires</code> libraries. The
+              version of <code>livewires</code> used for this project was taken
+              from this
+              <a class="inner-link"
+                href="http://www.delmarlearning.com/companions/content/1435455002/downloads/index.asp?isbn=1435455002"
+                target="_blank">download</a> (which also contains downloads for
+              Python and <code>pygame</code>), under "Book related software". To
+              download Python only, visit this
+              <a class="inner-link"
+                href="https://www.python.org/downloads/"
+                target="_blank">page</a>.
+            </p>
+
+
+            <p>
+              To download, clone the repository using this terminal command:
+            </p>
+
+            <code class="display-code">
+              <div class="clone-command">
+                git clone https://github.com/wbchristerson/perfect-matchings.git
+              </div>
+            </code>
+
+            <p>
+              Alternatively, follow the instructions below to download to a hard
+              drive:
+            </p>
+
+            <ul>
+              <li>Navigate to
+                <a class="inner-link"
+                   href="https://github.com/wbchristerson/perfect-matchings"
+                   target="_blank">
+                   this</a>
+                  page.
+              </li>
+              <li>Click the green "Clone or download" button towards the right
+                then choose "Download ZIP".</li>
+              <li>Find the folder <code>perfect-matchings-master</code> in your
+                Downloads folder or wherever it was placed on your device.</li>
+              <li>Right click and choose "Extract All" then extract.</li>
+              <li>From within the directory generated through extraction (named
+                <code>perfect-matchings-master</code>, unless you changed the
+                file name), double click on the batch file <code>main.bat</code>
+                . A window will open on screen, beginning the program.
+            </ul>
+
+            <p>If you encounter errors involving <code>pygame</code> or
+              <code>livewires</code>, make sure that those packages are
+              installed in <code>lib/site-packages</code> from the level of the
+              directory containing this project.
+            </p>
+
+          </div>
+        </h3>
+
+      </div>
+
+      <a href="../index.html" class="button">Return To Projects Page</a>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <h2 class="footer-heading site-end center-footer">
+        &copy; 2018 Will Christerson
+      </h2>
+    </div>
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
