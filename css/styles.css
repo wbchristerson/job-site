@@ -270,6 +270,13 @@ rect {
   padding: 10px 5px;
 }
 
+.multi-code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 0px 5px;
+}
+
 .site-footer {
   width: 100%;
   border-top: 1px solid #e8e5e5;
@@ -600,6 +607,11 @@ a.button:hover {
 
 .my-reads-image {
   width: 100%;
+}
+
+.display-code p {
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 601px) {
