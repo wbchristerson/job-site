@@ -94,12 +94,6 @@
               Foursquare API</a>.
         </p>
 
-        <p>Users begin with a map of the neighborhood together with a list view of
-        venues. A search feature allows the user to filter this list and upon
-        clicking any item, the user is taken to the chosen venue's item page,
-        detailing information about the location, hours of operation, busy times
-        of the week and day, a photo view, contact information, customer tips,
-        and more.</p>
       </h3>
       <div class="details">
         <h3 class="project-text sub-section">
@@ -116,19 +110,8 @@
           </div>
 
           <div class="extra-content hide-content">
-            <ul>
-              <li>You must find the 8 matching images from cards that are turned
-                over.</li>
-              <li>When you click a card, it flips, turns blue, and the hidden
-                image appears.</li>
-              <li>When you make a match, the cards change color and the images
-                remain visible.</li>
-              <li>If you do not make a match, the cards flip back over to their
-                original display.</li>
-              <li>Once you match all cards, the game is over and the screen
-                congratulates you, listing various statistics about your game.
-                To play again, click the "play again" button.</li>
-            </ul>
+            <p>The focus of this project is on utilizing APIs to develop
+            an application in conjunection with React.</p>
           </div>
         </h3>
 
@@ -147,23 +130,34 @@
           </div>
 
           <div class="extra-content hide-content">
-            <p>
-              The main screen includes a timer, a move counter, a reset button,
-              and a star rating. Below is an example of the interface:
-            </p>
+            <p>Users begin with a map of the neighborhood together with a list view of
+            venues. A search feature allows the user to filter this list and upon
+            clicking any item, the user is taken to the chosen venue's item page,
+            detailing information about the location, hours of operation, busy times
+            of the week and day, a photo view, contact information, customer tips,
+            and more.</p>
 
-            <img class="added-image normal-image pale-edge" src="../img/memory-game-page.png"
-                 alt="A screenshot of the game's introductory page">
+            <img class="added-image long-image pale-edge-corner"
+              src="../img/neighborhood-map/filter-page.png"
+              alt="A screenshot of the search page">
 
-            <p>
-              Finishing with at most 15 moves yields a 3-star rating,
-              finishing with more than 16 moves but at most 25 yields a 2-star
-              rating, and finishing with more than 25 moves yields a 1-star
-              rating. Here is an example end page:
-            </p>
+            <p>Clicking on the corresponding marker on the map will open a
+              street view of the premises. Markers on the map are filtered in
+              accordance with the filtered query and will animate/bounce when
+              the corresponding item is clicked. Additional features include
+              error handling for failed API requests, responsive design for
+              mobile devices, accessibility features for motor- and
+              visually-impaired users in the form of controlled focus, ARIA
+              roles, and alternate image text, and finally, a service worker to
+              cache the data of visited pages in the event of a poor network
+              connection.</p>
 
-            <img class="normal-image special-margin" src="../img/memory-end-page.png"
-                 alt="A screenshot of the game's end page">
+            <img class="added-image long-image pale-edge-corner"
+              src="../img/neighborhood-map/information-page.png"
+              alt="A screenshort of an individual information page listing data
+                about the venue">
+
+
           </div>
 
         </h3>
