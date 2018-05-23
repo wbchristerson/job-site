@@ -178,39 +178,103 @@
           </div>
 
           <div class="extra-content hide-content">
-            <p>
-              Run the application in your browser by clicking
-              <a class="inner-link"
-                 href="https://wbchristerson.github.io/memory-game/"
-                 target="_blank">here</a>. To download, clone the repository
-              using this terminal command:
-            </p>
-
+            <p>To download, you can clone the repository using this terminal
+              command:</p>
             <code class="display-code">
               <div class="clone-command">
-                git clone https://github.com/wbchristerson/memory-game.git
+                git clone https://github.com/wbchristerson/neighborhood-map.git
               </div>
             </code>
 
-            <p>
-              Alternatively, follow the instructions below to download to a hard drive:
-            </p>
-
+            <p>Alternatively, follow the instructions below to download to a
+              hard drive and to run the application:</p>
             <ul>
               <li>Navigate to
                 <a class="inner-link"
-                   href="https://github.com/wbchristerson/memory-game"
+                   href="https://github.com/wbchristerson/neighborhood-map"
                    target="_blank">
                    this</a>
-                  page.
+                  page.</li>
+              <li>Click the green "Clone or download" button towards the right
+                then choose "Download ZIP".</li>
+              <li>Find the folder <code>neighborhood-map-master</code>
+                in your Downloads folder or wherever it was placed on your
+                device.</li>
+              <li>Right click and choose "Extract All".</li>
+              <li>To run the application, you will need to have <code>npm</code>
+                installed. See <a class="inner-link"
+                 href="https://www.npmjs.com/get-npm"
+                 target="_blank">
+                 here</a>
+                 for installation information.</li>
+              <li>To install all dependencies for the project from the command
+                line, run the following commands in the terminal from within the
+                project directory:
+                <code class="display-code">
+                  <div class="clone-command">
+                    <p>cd neighborhood-map</p>
+                    <p>npm install</p>
+                  </div>
+                </code>
               </li>
-              <li>Click the green "Clone or download" button towards the right then choose "Download ZIP".</li>
-              <li>Find the folder <code>memory-game-master</code> in your Downloads folder or wherever it was placed on your device.</li>
-              <li>Right click and choose "Extract All" then extract.</li>
-              <li>Open your browser and use <code>Ctrl + O</code> (for Windows machines) to open the file selector on your device.</li>
-              <li>Go to <code>memory-game-master</code>, enter <code>memory-game-master</code> again, then select <code>index.html</code>. The game screen will appear.</li>
+              <li>
+                You will need a <code>Google Maps Platform</code> API key along
+                with a <code>Foursquare Client ID</code> and a <code>Foursquare
+                Client Secret</code> to use in the application:
+                <ul>
+                  <li>If you do not have a Google Maps API key already, then you
+                    can obtain a <code>Google Maps Platform</code> API key for
+                    free <a class="inner-link"
+                      href="https://cloud.google.com/maps-platform/"
+                      target="_blank">
+                      here</a>. You will have to create a billing account but
+                    there is a built in $200 credit.
+                  </li>
+                  <li>
+                    If you do not have the <code>Foursquare Client ID</code> or
+                    <code>Foursquare Client Secret</code>, then you can obtain
+                    them
+                    <a class="inner-link"
+                      href="https://developer.foursquare.com/"
+                      target="_blank">
+                      here</a> by first creating a free account.
+                  </li>
+                  <li>After you have all three data items, create a new folder
+                    in the <code>src</code> directory called <code>api</code>.
+                  </li>
+                  <li>Within <code>api</code>, create a Javascript file called
+                    <code>APIkey.js</code>. Within this file add the following
+                    lines, where <code>YOUR_GOOGLE_KEY</code>,
+                    <code>YOUR_FOURSQUARE_CLIENT_ID</code>, and
+                    <code>YOUR_FOURSQUARE_CLIENT_SECRET</code> are replaced by
+                    your personalized data values (don't forget the delimiting
+                    quotes):
+                    <code class="display-code">
+                      <div class="clone-command">
+                        <p>export const GOOGLE_MAP_API_KEY = 'YOUR_GOOGLE_KEY'</p>
+                        <p>export const FOURSQUARE_CLIENT_ID = 'YOUR_FOURSQUARE_CLIENT_ID'</p>
+                        <p>export const FOURSQUARE_CLIENT_SECRET = 'YOUR_FOURSQUARE_CLIENT_SECRET'</p>
+                      </div>
+                    </code>
+                  </li>
+                  <li>Save the file.</li>
+                </ul>
+              </li>
+              <li>Assuming that your location in the terminal is now within the
+                <code>neighborhood-map</code> directory, run the following
+                command to execute the application:
+                <code class="display-code">
+                  <div class="clone-command">
+                    npm start
+                  </div>
+                </code>
+                (I believe that <code>yarn start</code> will also be sufficient.)
+              </li>
+              <li>Warning: The service worker that is bundled with
+                <code>create-react-app</code> only works in production mode.
+              </li>
             </ul>
-
+            The page will open in the browser.
 
           </div>
         </h3>
