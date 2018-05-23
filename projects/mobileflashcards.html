@@ -43,7 +43,7 @@
       </div>
       <img
         class="added-image normal-image pale-edge"
-        src="../img/mobile-flashcards-main-page.png"
+        src="../img/mobile-flashcards/main-page.png"
         alt="A sample image of the list of all flashcard decks that have been created."
       >
       <div class="github-site description">
@@ -52,16 +52,14 @@
         </a>
       </div>
       <h3 class="project-text description">
-        Using HTML, CSS, and JavaScript, this two-page application challenges
-        the player to find all matching pairs of cards in the fewest moves. To
-        try the game, click
-          <a class="inner-link"
-             href="https://wbchristerson.github.io/memory-game/"
-             target="_blank">
-             here</a>.
-        Note: This project is based on
-        a skeleton structure from Udacity. For more information, see
-        the initial commit on the appropriate GitHub page given above.
+        This project is a flashcard application for Android mobile devices in
+        which users may create collections of flashcards and quiz themselves on
+        the decks that they compile. I created the application using
+        <code>react-native</code> along with <code>redux</code>. (This project
+        was bootstrapped with
+        <a class="inner-link"
+          href="https://github.com/react-community/create-react-native-app"
+          target="_blank">Create React Native App</a>.)
       </h3>
       <div class="details">
         <h3 class="project-text sub-section">
@@ -79,17 +77,16 @@
 
           <div class="extra-content hide-content">
             <ul>
-              <li>You must find the 8 matching images from cards that are turned
-                over.</li>
-              <li>When you click a card, it flips, turns blue, and the hidden
-                image appears.</li>
-              <li>When you make a match, the cards change color and the images
-                remain visible.</li>
-              <li>If you do not make a match, the cards flip back over to their
-                original display.</li>
-              <li>Once you match all cards, the game is over and the screen
-                congratulates you, listing various statistics about your game.
-                To play again, click the "play again" button.</li>
+              <li>The main section includes a tab navigator for flaschcard
+                decks that have already been created as well as a tab for
+                creating new decks.</li>
+              <li>Clicking on a deck tile takes the user to the individual page
+                for the topic, where additional cards for the deck can be
+                created and added.</li>
+              <li>From the individual deck page, users may also take quizzes
+                in which they mark their responses based on the answers shown.
+                Afterwards, a score is given.
+              </li>
             </ul>
           </div>
         </h3>
@@ -110,8 +107,11 @@
 
           <div class="extra-content hide-content">
             <p>
-              The main screen includes a timer, a move counter, a reset button,
-              and a star rating. Below is an example of the interface:
+              As said above, the application begins with a tab navigator
+              composed of two screens. The first is a list view of all currently
+              available flashcard decks. As a starting point, two decks are
+              already provided: "Spanish" (9 cards) and "Architecture" (2 cards)
+              . You may quiz yourself with these or add new decks.
             </p>
 
             <img class="added-image normal-image pale-edge" src="../img/memory-game-page.png"
