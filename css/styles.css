@@ -277,6 +277,8 @@ rect {
   border: 1px solid #999;
   display: block;
   padding: 10px 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .multi-code {
