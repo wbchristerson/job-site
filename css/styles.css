@@ -134,6 +134,11 @@ a:hover {
   width: 320px;
 }
 
+.mobile-image {
+  display: block;
+  height: 400px;
+}
+
 .long-image {
   display: block;
   height: 450px;
@@ -216,6 +221,10 @@ a:hover {
 .pale-edge {
   border: 0.5px solid black;
   border-radius: 5px;
+}
+
+.pale-edge-corners {
+  border: 0.5px solid black;
 }
 
 .select-border {
@@ -612,6 +621,11 @@ a.button:hover {
 .display-code p {
   margin-top: 0px;
   margin-bottom: 5px;
+}
+
+.image-display {
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (min-width: 601px) {

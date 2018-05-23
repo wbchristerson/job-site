@@ -44,7 +44,7 @@
         <a href="readable.html" class="fa fa-arrow-right pic3 middle-arrow"></a>
       </div>
       <img
-        class="added-image normal-image pale-edge"
+        class="added-image mobile-image pale-edge-corner"
         src="../img/mobile-flashcards/main-page.png"
         alt="A sample image of the list of all flashcard decks that have been created."
       >
@@ -116,18 +116,62 @@
               . You may quiz yourself with these or add new decks.
             </p>
 
-            <img class="added-image normal-image pale-edge" src="../img/memory-game-page.png"
-                 alt="A screenshot of the game's introductory page">
-
             <p>
-              Finishing with at most 15 moves yields a 3-star rating,
-              finishing with more than 16 moves but at most 25 yields a 2-star
-              rating, and finishing with more than 25 moves yields a 1-star
-              rating. Here is an example end page:
+              The second screen in the tab navigator is a form to add an
+              additional deck ("new deck"). Submitting the form will take the
+              user to the new page for that deck.
             </p>
 
-            <img class="normal-image special-margin" src="../img/memory-end-page.png"
-                 alt="A screenshot of the game's end page">
+            <img class="added-image mobile-image"
+              src="../img/mobile-flashcards/new-deck.png"
+              alt="A screenshot of the game's new deck page">
+
+            <p>
+              Individual deck pages can be reached by clicking on a deck from
+              the list view. This lists the name of the deck, the number of
+              cards, and buttons for adding a card to the deck as well as for
+              quizzing one's self.
+            </p>
+
+            <img class="added-image mobile-image"
+              src="../img/mobile-flashcards/deck.png"
+              alt="A screenshot of the game's individual deck page">
+
+            <p>
+              The "new card" form is similar to the "new deck" form.
+            </p>
+
+            <img class="added-image mobile-image"
+              src="../img/mobile-flashcards/new-card.png"
+              alt="A screenshot of the game's new card page">
+
+            <p>
+              The quiz page displays the deck questions in order with an
+              available button to check the answer and then grade one's self.
+              Clicking the answer field will reveal the answer to the given
+              question. When the user finishes looking through the deck, his/her
+              score is shown.
+            </p>
+
+            <div class="image-display">
+              <img class="added-image mobile-image pale-edge-corners"
+                src="../img/mobile-flashcards/quiz-question.png"
+                alt="A screenshot of the game's new card page">
+
+              <img class="added-image mobile-image pale-edge-corners"
+                src="../img/mobile-flashcards/quiz-answer.png"
+                alt="A screenshot of the game's new card page">
+
+              <img class="added-image mobile-image pale-edge-corners"
+                src="../img/mobile-flashcards/finished-quiz.png"
+                alt="A screenshot of the game's new card page">
+            </div>
+
+            <p>
+              To maintain data for this application, I used the
+              <code>AsyncStorage</code> key-value storage system heavily.
+            </p>
+
           </div>
 
         </h3>
