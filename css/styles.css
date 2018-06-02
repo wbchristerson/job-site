@@ -630,6 +630,15 @@ a.button:hover {
   flex-direction: row;
 }
 
+.resume {
+  width: 60%;
+  height: 700px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 601px) {
   .narrow-email {
     display: none;
@@ -658,6 +667,12 @@ a.button:hover {
 
   a.button {
     width: 60%;
+  }
+
+  .resume {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
